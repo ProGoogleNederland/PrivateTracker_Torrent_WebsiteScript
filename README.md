@@ -52,5 +52,8 @@ Qwerty@123
 
 Adjust php.ini if needed
 
-2021 Copyright and Credit 
+2021 Copyright
 [Pro Google Nederland](https://progoogle.nl)
+
+Credits for
+Robin Offenberg
