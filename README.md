@@ -1,13 +1,18 @@
-# TorrentMedia.org
-**PHP7.3**
-**Latest MySQL**
-**Light weight**
+=============================================
+=== DUTCH PRIVATE TORRENT TRACKER WEBSITE ===
+===   CLEAN AND COLORFULL MODERN DESIGN   ===
+=============================================
+==========  :: FAST & STABLE ::  ============
+==========  ::    PHP7.3+    ::  ============
+==========  ::  LATEST MySQL ::  ============
+=============================================
 
-**Dutch Private Torrent Tracker Website**
-[DEMO](https://torrentmedia.org)
 
-adjust as needed:
-- include/bittorrent.php (links & sitename)
+=============================================
+==========  ::  HOW TO SETUP  :: ============
+=============================================
+
+1. EDIT; include/bittorrent.php (links & sitename)
 ```
 $announce_urls[] = "https://torrentmedia.org/announce.php";
 $announce_site = "https://torrentmedia.org/announce.php";
@@ -27,16 +32,16 @@ $RECOVEREMAIL = "no-reply@torrentmedia.org";
 $SITE_NAME = "Torrent Media";
 ```
 
-- include/bittorrent.php  (password reset or creation)
+2. EDIT; include/bittorrent.php  (password reset or creation)
 ```
 // To make a new hash go to http://www.sha1-online.com/ and create a secure key SHA1
 
 $PASSWORD_HASH ="5600BA1C24CB49B5600BA1C24CB49B";
 ```
 
-Make a database inport database in "mysql" folder
-- include/secrets.php
-database settings
+3. Make a database inport database in "mysql" folder
+
+4. EDIT; include/secrets.php (database settings)
 ```
 $mysql_host = "localhost";  /////location of database, usually localhost 
 $mysql_user = "progoogl_torrent";  ///username of database
@@ -44,16 +49,18 @@ $mysql_pass = "progoogl_torrent"; ////pass of database
 $mysql_db = "progoogl_torrent"; ////name of database
 ```
 
-Login System:
+5. LOGIN; (admin account in front-end)
 ```
 TorrentMedia
 Qwerty@123
 ```
 
-Adjust php.ini if needed
+6. OPPOSITIONAL; Adjust php.ini if needed
 
-2021 Copyright
-[Pro Google Nederland](https://progoogle.nl)
-
-Credits for
-Robin Offenberg
+============================================
+=====  ::      2023 Copyright     ::  ======
+=====  ::  [Pro Google Nederland](https://progoogle.nl)  ::  =======
+============================================
+=========  ::   Credits for   :: ===========
+=========  :: Robin Offenberg :: ===========
+============================================
