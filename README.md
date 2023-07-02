@@ -1,3 +1,9 @@
+![alt text](https://github.com/[username]/[reponame]/blob/[branch]/demo1.jpg?raw=true)
+
+![alt text](https://github.com/[username]/[reponame]/blob/[branch]/demo2.jpg?raw=true)
+
+![alt text](https://github.com/[username]/[reponame]/blob/[branch]/demo3.jpg?raw=true)
+
 ```
 =============================================
 === DUTCH PRIVATE TORRENT TRACKER WEBSITE ===
@@ -70,7 +76,7 @@ Qwerty@123
 ```
 ============================================
 =====  ::      2023 Copyright     ::  ======
-=====  ::  Pro Google Nederland  ::  =======
+=====  ::  Pro Google Nederland   ::  ======
 ============================================
 =========  ::   Credits for   :: ===========
 =========  :: Robin Offenberg :: ===========
