@@ -1,15 +1,21 @@
-
+```
+=============================================
 === DUTCH PRIVATE TORRENT TRACKER WEBSITE ===
 ===   CLEAN AND COLORFULL MODERN DESIGN   ===
+=============================================
 ==========  :: FAST & STABLE ::  ============
 ==========  ::    PHP7.3+    ::  ============
 ==========  ::  LATEST MySQL ::  ============
+=============================================
 
 
+=============================================
 ==========  ::  HOW TO SETUP  :: ============
-
+=============================================
+```
 
 1. EDIT; include/bittorrent.php (links & sitename)
+
 ```
 $announce_urls[] = "https://torrentmedia.org/announce.php";
 $announce_site = "https://torrentmedia.org/announce.php";
@@ -30,15 +36,21 @@ $SITE_NAME = "Torrent Media";
 ```
 
 2. EDIT; include/bittorrent.php  (password reset or creation)
+   
 ```
 // To make a new hash go to http://www.sha1-online.com/ and create a secure key SHA1
 
 $PASSWORD_HASH ="5600BA1C24CB49B5600BA1C24CB49B";
 ```
 
-3. Make a database inport database in "mysql" folder
+3. IMPORT DATABASE; (in "mysql" folder)
+
+```
+database.sql
+```
 
 4. EDIT; include/secrets.php (database settings)
+
 ```
 $mysql_host = "localhost";  /////location of database, usually localhost 
 $mysql_user = "progoogl_torrent";  ///username of database
@@ -47,6 +59,7 @@ $mysql_db = "progoogl_torrent"; ////name of database
 ```
 
 5. LOGIN; (admin account in front-end)
+
 ```
 TorrentMedia
 Qwerty@123
@@ -54,10 +67,12 @@ Qwerty@123
 
 6. OPPOSITIONAL; Adjust php.ini if needed
 
-
+```
+============================================
 =====  ::      2023 Copyright     ::  ======
-=====  ::  [Pro Google Nederland](https://progoogle.nl)  ::  =======
-
+=====  ::  Pro Google Nederland  ::  =======
+============================================
 =========  ::   Credits for   :: ===========
 =========  :: Robin Offenberg :: ===========
-
+============================================
+```
