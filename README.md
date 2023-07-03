@@ -1,10 +1,10 @@
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/demo/demo1.png?raw=true)
+![alt text](https://github.com/ProGoogleNederland/TorrentMedia/blob/main/demo/demo1.png?raw=true)
 
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/demo/demo2.png?raw=true)
+![alt text](https://github.com/ProGoogleNederland/TorrentMedia/blob/main/demo/demo2.png?raw=true)
 
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/demo/demo3.png?raw=true)
+![alt text](https://github.com/ProGoogleNederland/TorrentMedia/blob/main/demo/demo3.png?raw=true)
 
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/demo/demo4.png?raw=true)
+![alt text](https://github.com/ProGoogleNederland/TorrentMedia/blob/main/demo/demo4.png?raw=true)
 
 
 ```
