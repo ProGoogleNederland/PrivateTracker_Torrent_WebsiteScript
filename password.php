@@ -33,7 +33,7 @@ if ($action == "update")
 	if ($row["passhash"] != md5($row["secret"] . $ww_old . $row["secret"]))
 		site_error_message("Foutmelding", "Dit komt niet overeen met uw oude wachtwoord.");
 	
-	$sec = "5600BA1C24CB49B5D243F168D18AFCDBDB57B937";
+	$sec = $PASSWORD_HASH;
 	$passhash = md5($sec . $ww_new . $sec);
 	logincookie($CURUSER["id"], $passhash);
 	$secret = sqlesc($sec);
