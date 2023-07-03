@@ -85,7 +85,7 @@ elseif(@$_GET)
 	for ($i = 0; $i < 10; $i++)
 		$newpassword .= $chars[mt_rand(0, strlen($chars) - 1)];
 
-	$sec = "5600BA1C24CB49B5D243F168D18AFCDBDB57B937";
+	$sec = $PASSWORD_HASH;
 	$newpasshash = md5($sec . $newpassword . $sec);
 	mysqli_query($con_link, "UPDATE users SET secret=" . sqlesc($sec) . ", editsecret='', passhash=" . sqlesc($newpasshash) . " WHERE id=$id AND editsecret=" . sqlesc($arr["editsecret"]));
 
