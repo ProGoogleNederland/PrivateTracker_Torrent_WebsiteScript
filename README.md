@@ -46,7 +46,7 @@ $SITE_NAME = "Torrent Media";
 ```
 // To make a new hash go to http://www.sha1-online.com/ and create a secure key SHA1
 
-$PASSWORD_HASH ="5600BA1C24CB49B5600BA1C24CB49B";
+$PASSWORD_HASH ="da39a3ee5e6b4b0d3255bfef95601890afd80709";
 ```
 
 3. IMPORT DATABASE; (in "mysql" folder)
