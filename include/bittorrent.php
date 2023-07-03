@@ -31,7 +31,7 @@ $invites = 15000;
 
 // To make a new hash go to http://www.sha1-online.com/ and create a secure key SHA1
 
-$PASSWORD_HASH ="da39a3ee5e6b4b0d3255bfef95601890afd80709";
+$PASSWORD_HASH ="bb43ef1b3ec5e2bfca21091b40fc987fc74ebc04";
 
 $torrent_dir = "torrents";
 $cover_dir = "covers";
