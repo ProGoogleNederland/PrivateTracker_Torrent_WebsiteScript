@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost
--- Generation Time: Nov 30, 2021 at 06:55 PM
--- Server version: 10.2.41-MariaDB
--- PHP Version: 7.2.30
+-- Host: localhost:3306
+-- Gegenereerd op: 03 jul 2023 om 03:53
+-- Serverversie: 10.3.36-MariaDB-cll-lve
+-- PHP-versie: 8.1.16
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `torrent_torrent`
+-- Database: `progoogl_torrent`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `aa_results`
+-- Tabelstructuur voor tabel `aa_results`
 --
 
 CREATE TABLE `aa_results` (
@@ -44,7 +44,7 @@ CREATE TABLE `aa_results` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `addedrequests`
+-- Tabelstructuur voor tabel `addedrequests`
 --
 
 CREATE TABLE `addedrequests` (
@@ -56,7 +56,7 @@ CREATE TABLE `addedrequests` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `aktie`
+-- Tabelstructuur voor tabel `aktie`
 --
 
 CREATE TABLE `aktie` (
@@ -71,7 +71,7 @@ CREATE TABLE `aktie` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `aktie_donatie`
+-- Tabelstructuur voor tabel `aktie_donatie`
 --
 
 CREATE TABLE `aktie_donatie` (
@@ -88,7 +88,7 @@ CREATE TABLE `aktie_donatie` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `antidos_logs`
+-- Tabelstructuur voor tabel `antidos_logs`
 --
 
 CREATE TABLE `antidos_logs` (
@@ -101,7 +101,7 @@ CREATE TABLE `antidos_logs` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `auto_warning`
+-- Tabelstructuur voor tabel `auto_warning`
 --
 
 CREATE TABLE `auto_warning` (
@@ -119,7 +119,7 @@ CREATE TABLE `auto_warning` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `avps`
+-- Tabelstructuur voor tabel `avps`
 --
 
 CREATE TABLE `avps` (
@@ -132,7 +132,7 @@ CREATE TABLE `avps` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `banned_agent`
+-- Tabelstructuur voor tabel `banned_agent`
 --
 
 CREATE TABLE `banned_agent` (
@@ -143,7 +143,7 @@ CREATE TABLE `banned_agent` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `bans`
+-- Tabelstructuur voor tabel `bans`
 --
 
 CREATE TABLE `bans` (
@@ -156,7 +156,7 @@ CREATE TABLE `bans` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `bans`
+-- Gegevens worden geëxporteerd voor tabel `bans`
 --
 
 INSERT INTO `bans` (`id`, `added`, `addedby`, `comment`, `first`, `last`) VALUES
@@ -180,7 +180,7 @@ INSERT INTO `bans` (`id`, `added`, `addedby`, `comment`, `first`, `last`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `bans_special`
+-- Tabelstructuur voor tabel `bans_special`
 --
 
 CREATE TABLE `bans_special` (
@@ -195,7 +195,7 @@ CREATE TABLE `bans_special` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `berichten`
+-- Tabelstructuur voor tabel `berichten`
 --
 
 CREATE TABLE `berichten` (
@@ -213,7 +213,7 @@ CREATE TABLE `berichten` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `berichten_box`
+-- Tabelstructuur voor tabel `berichten_box`
 --
 
 CREATE TABLE `berichten_box` (
@@ -225,7 +225,7 @@ CREATE TABLE `berichten_box` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `berichten_sjabloon`
+-- Tabelstructuur voor tabel `berichten_sjabloon`
 --
 
 CREATE TABLE `berichten_sjabloon` (
@@ -238,7 +238,7 @@ CREATE TABLE `berichten_sjabloon` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `berichten_subject`
+-- Tabelstructuur voor tabel `berichten_subject`
 --
 
 CREATE TABLE `berichten_subject` (
@@ -249,7 +249,7 @@ CREATE TABLE `berichten_subject` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `blocks`
+-- Tabelstructuur voor tabel `blocks`
 --
 
 CREATE TABLE `blocks` (
@@ -261,7 +261,7 @@ CREATE TABLE `blocks` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `bonus_punten`
+-- Tabelstructuur voor tabel `bonus_punten`
 --
 
 CREATE TABLE `bonus_punten` (
@@ -274,7 +274,7 @@ CREATE TABLE `bonus_punten` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `bonus_punten`
+-- Gegevens worden geëxporteerd voor tabel `bonus_punten`
 --
 
 INSERT INTO `bonus_punten` (`id`, `torrent_id`, `sender_id`, `receiver_id`, `added`, `ammount`) VALUES
@@ -308,7 +308,7 @@ INSERT INTO `bonus_punten` (`id`, `torrent_id`, `sender_id`, `receiver_id`, `add
 -- --------------------------------------------------------
 
 --
--- Table structure for table `bookmarks`
+-- Tabelstructuur voor tabel `bookmarks`
 --
 
 CREATE TABLE `bookmarks` (
@@ -320,7 +320,7 @@ CREATE TABLE `bookmarks` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `categories`
+-- Tabelstructuur voor tabel `categories`
 --
 
 CREATE TABLE `categories` (
@@ -331,7 +331,7 @@ CREATE TABLE `categories` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `categories`
+-- Gegevens worden geëxporteerd voor tabel `categories`
 --
 
 INSERT INTO `categories` (`id`, `name`, `image`, `volgorde`) VALUES
@@ -359,7 +359,7 @@ INSERT INTO `categories` (`id`, `name`, `image`, `volgorde`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `clients`
+-- Tabelstructuur voor tabel `clients`
 --
 
 CREATE TABLE `clients` (
@@ -372,7 +372,7 @@ CREATE TABLE `clients` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `comments`
+-- Tabelstructuur voor tabel `comments`
 --
 
 CREATE TABLE `comments` (
@@ -389,7 +389,7 @@ CREATE TABLE `comments` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `comments_uploader`
+-- Tabelstructuur voor tabel `comments_uploader`
 --
 
 CREATE TABLE `comments_uploader` (
@@ -405,7 +405,7 @@ CREATE TABLE `comments_uploader` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `completed`
+-- Tabelstructuur voor tabel `completed`
 --
 
 CREATE TABLE `completed` (
@@ -417,7 +417,7 @@ CREATE TABLE `completed` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `counter_casino`
+-- Tabelstructuur voor tabel `counter_casino`
 --
 
 CREATE TABLE `counter_casino` (
@@ -429,7 +429,7 @@ CREATE TABLE `counter_casino` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `countries`
+-- Tabelstructuur voor tabel `countries`
 --
 
 CREATE TABLE `countries` (
@@ -439,7 +439,7 @@ CREATE TABLE `countries` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `countries`
+-- Gegevens worden geëxporteerd voor tabel `countries`
 --
 
 INSERT INTO `countries` (`id`, `name`, `flagpic`) VALUES
@@ -548,7 +548,7 @@ INSERT INTO `countries` (`id`, `name`, `flagpic`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `credits`
+-- Tabelstructuur voor tabel `credits`
 --
 
 CREATE TABLE `credits` (
@@ -561,7 +561,7 @@ CREATE TABLE `credits` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `credits`
+-- Gegevens worden geëxporteerd voor tabel `credits`
 --
 
 INSERT INTO `credits` (`id`, `torrent_id`, `sender_id`, `receiver_id`, `added`, `ammount`) VALUES
@@ -698,7 +698,7 @@ INSERT INTO `credits` (`id`, `torrent_id`, `sender_id`, `receiver_id`, `added`, 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `def_messages`
+-- Tabelstructuur voor tabel `def_messages`
 --
 
 CREATE TABLE `def_messages` (
@@ -711,7 +711,7 @@ CREATE TABLE `def_messages` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `dlfsuinstelingen`
+-- Tabelstructuur voor tabel `dlfsuinstelingen`
 --
 
 CREATE TABLE `dlfsuinstelingen` (
@@ -743,7 +743,7 @@ CREATE TABLE `dlfsuinstelingen` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `dlfsuinstelingen`
+-- Gegevens worden geëxporteerd voor tabel `dlfsuinstelingen`
 --
 
 INSERT INTO `dlfsuinstelingen` (`id`, `userip`, `loginsite`, `sitelog`, `searchcloud`, `reports`, `readposts`, `opschonen`, `berichttorrents`, `massaberichtmods`, `massaberichten`, `hits`, `helpdesk`, `bookmarks`, `donationsusers`, `shouts`, `verzoekjes`, `verzoekjesstemmen`, `warnings`, `warnnutorrent`, `warnpmgblast`, `warnpmseeding`, `warnpmtorrent`, `added`, `added_by`) VALUES
@@ -752,7 +752,7 @@ INSERT INTO `dlfsuinstelingen` (`id`, `userip`, `loginsite`, `sitelog`, `searchc
 -- --------------------------------------------------------
 
 --
--- Table structure for table `donatieoverzicht`
+-- Tabelstructuur voor tabel `donatieoverzicht`
 --
 
 CREATE TABLE `donatieoverzicht` (
@@ -766,7 +766,7 @@ CREATE TABLE `donatieoverzicht` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `donatie_ideal`
+-- Tabelstructuur voor tabel `donatie_ideal`
 --
 
 CREATE TABLE `donatie_ideal` (
@@ -781,7 +781,7 @@ CREATE TABLE `donatie_ideal` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `donatie_ideal_claim_msg`
+-- Tabelstructuur voor tabel `donatie_ideal_claim_msg`
 --
 
 CREATE TABLE `donatie_ideal_claim_msg` (
@@ -796,7 +796,7 @@ CREATE TABLE `donatie_ideal_claim_msg` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `donatie_ideal_del`
+-- Tabelstructuur voor tabel `donatie_ideal_del`
 --
 
 CREATE TABLE `donatie_ideal_del` (
@@ -811,7 +811,7 @@ CREATE TABLE `donatie_ideal_del` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `donatie_sms`
+-- Tabelstructuur voor tabel `donatie_sms`
 --
 
 CREATE TABLE `donatie_sms` (
@@ -826,7 +826,7 @@ CREATE TABLE `donatie_sms` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `donatie_sms_claim_msg`
+-- Tabelstructuur voor tabel `donatie_sms_claim_msg`
 --
 
 CREATE TABLE `donatie_sms_claim_msg` (
@@ -841,7 +841,7 @@ CREATE TABLE `donatie_sms_claim_msg` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `donatie_sms_del`
+-- Tabelstructuur voor tabel `donatie_sms_del`
 --
 
 CREATE TABLE `donatie_sms_del` (
@@ -856,7 +856,7 @@ CREATE TABLE `donatie_sms_del` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `donatie_telefoon`
+-- Tabelstructuur voor tabel `donatie_telefoon`
 --
 
 CREATE TABLE `donatie_telefoon` (
@@ -871,7 +871,7 @@ CREATE TABLE `donatie_telefoon` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `donatie_telefoon_claim_msg`
+-- Tabelstructuur voor tabel `donatie_telefoon_claim_msg`
 --
 
 CREATE TABLE `donatie_telefoon_claim_msg` (
@@ -886,7 +886,7 @@ CREATE TABLE `donatie_telefoon_claim_msg` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `donatie_telefoon_del`
+-- Tabelstructuur voor tabel `donatie_telefoon_del`
 --
 
 CREATE TABLE `donatie_telefoon_del` (
@@ -901,7 +901,7 @@ CREATE TABLE `donatie_telefoon_del` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `donatie_users`
+-- Tabelstructuur voor tabel `donatie_users`
 --
 
 CREATE TABLE `donatie_users` (
@@ -915,7 +915,7 @@ CREATE TABLE `donatie_users` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `donations`
+-- Tabelstructuur voor tabel `donations`
 --
 
 CREATE TABLE `donations` (
@@ -940,7 +940,7 @@ CREATE TABLE `donations` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `donations_claim`
+-- Tabelstructuur voor tabel `donations_claim`
 --
 
 CREATE TABLE `donations_claim` (
@@ -957,7 +957,7 @@ CREATE TABLE `donations_claim` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `donations_claim_del`
+-- Tabelstructuur voor tabel `donations_claim_del`
 --
 
 CREATE TABLE `donations_claim_del` (
@@ -975,7 +975,7 @@ CREATE TABLE `donations_claim_del` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `donations_claim_msg`
+-- Tabelstructuur voor tabel `donations_claim_msg`
 --
 
 CREATE TABLE `donations_claim_msg` (
@@ -993,7 +993,7 @@ CREATE TABLE `donations_claim_msg` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `donations_email`
+-- Tabelstructuur voor tabel `donations_email`
 --
 
 CREATE TABLE `donations_email` (
@@ -1004,7 +1004,7 @@ CREATE TABLE `donations_email` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `donations_lotery`
+-- Tabelstructuur voor tabel `donations_lotery`
 --
 
 CREATE TABLE `donations_lotery` (
@@ -1028,7 +1028,7 @@ CREATE TABLE `donations_lotery` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `donations_message`
+-- Tabelstructuur voor tabel `donations_message`
 --
 
 CREATE TABLE `donations_message` (
@@ -1041,7 +1041,7 @@ CREATE TABLE `donations_message` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `donations_registratie`
+-- Tabelstructuur voor tabel `donations_registratie`
 --
 
 CREATE TABLE `donations_registratie` (
@@ -1053,7 +1053,7 @@ CREATE TABLE `donations_registratie` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `donations_users`
+-- Tabelstructuur voor tabel `donations_users`
 --
 
 CREATE TABLE `donations_users` (
@@ -1065,7 +1065,7 @@ CREATE TABLE `donations_users` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `donations_users`
+-- Gegevens worden geëxporteerd voor tabel `donations_users`
 --
 
 INSERT INTO `donations_users` (`id`, `user_id`, `krediet`, `added`, `pincode`) VALUES
@@ -1116,7 +1116,7 @@ INSERT INTO `donations_users` (`id`, `user_id`, `krediet`, `added`, `pincode`) V
 -- --------------------------------------------------------
 
 --
--- Table structure for table `doss_logboek`
+-- Tabelstructuur voor tabel `doss_logboek`
 --
 
 CREATE TABLE `doss_logboek` (
@@ -1128,7 +1128,7 @@ CREATE TABLE `doss_logboek` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `downloaded`
+-- Tabelstructuur voor tabel `downloaded`
 --
 
 CREATE TABLE `downloaded` (
@@ -1144,7 +1144,7 @@ CREATE TABLE `downloaded` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `downtotals`
+-- Tabelstructuur voor tabel `downtotals`
 --
 
 CREATE TABLE `downtotals` (
@@ -1159,7 +1159,7 @@ CREATE TABLE `downtotals` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `downup`
+-- Tabelstructuur voor tabel `downup`
 --
 
 CREATE TABLE `downup` (
@@ -1176,7 +1176,7 @@ CREATE TABLE `downup` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `dox`
+-- Tabelstructuur voor tabel `dox`
 --
 
 CREATE TABLE `dox` (
@@ -1193,7 +1193,7 @@ CREATE TABLE `dox` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `faq`
+-- Tabelstructuur voor tabel `faq`
 --
 
 CREATE TABLE `faq` (
@@ -1207,7 +1207,7 @@ CREATE TABLE `faq` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `faq`
+-- Gegevens worden geëxporteerd voor tabel `faq`
 --
 
 INSERT INTO `faq` (`id`, `volgorde`, `onderwerp`, `inhoud`, `min_class`, `edit_by`, `edit_date`) VALUES
@@ -1216,7 +1216,7 @@ INSERT INTO `faq` (`id`, `volgorde`, `onderwerp`, `inhoud`, `min_class`, `edit_b
 -- --------------------------------------------------------
 
 --
--- Table structure for table `files`
+-- Tabelstructuur voor tabel `files`
 --
 
 CREATE TABLE `files` (
@@ -1229,7 +1229,7 @@ CREATE TABLE `files` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `forums`
+-- Tabelstructuur voor tabel `forums`
 --
 
 CREATE TABLE `forums` (
@@ -1245,7 +1245,7 @@ CREATE TABLE `forums` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `forums`
+-- Gegevens worden geëxporteerd voor tabel `forums`
 --
 
 INSERT INTO `forums` (`sort`, `id`, `name`, `description`, `minclassread`, `minclasswrite`, `postcount`, `topiccount`, `minclasscreate`) VALUES
@@ -1267,7 +1267,7 @@ INSERT INTO `forums` (`sort`, `id`, `name`, `description`, `minclassread`, `minc
 -- --------------------------------------------------------
 
 --
--- Table structure for table `friends`
+-- Tabelstructuur voor tabel `friends`
 --
 
 CREATE TABLE `friends` (
@@ -1277,7 +1277,7 @@ CREATE TABLE `friends` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `friends`
+-- Gegevens worden geëxporteerd voor tabel `friends`
 --
 
 INSERT INTO `friends` (`id`, `userid`, `friendid`) VALUES
@@ -1302,7 +1302,7 @@ INSERT INTO `friends` (`id`, `userid`, `friendid`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `giro`
+-- Tabelstructuur voor tabel `giro`
 --
 
 CREATE TABLE `giro` (
@@ -1316,7 +1316,7 @@ CREATE TABLE `giro` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `helpdesk`
+-- Tabelstructuur voor tabel `helpdesk`
 --
 
 CREATE TABLE `helpdesk` (
@@ -1334,7 +1334,7 @@ CREATE TABLE `helpdesk` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `hesk_attachments`
+-- Tabelstructuur voor tabel `hesk_attachments`
 --
 
 CREATE TABLE `hesk_attachments` (
@@ -1347,7 +1347,7 @@ CREATE TABLE `hesk_attachments` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `hesk_attachments`
+-- Gegevens worden geëxporteerd voor tabel `hesk_attachments`
 --
 
 INSERT INTO `hesk_attachments` (`att_id`, `ticket_id`, `saved_name`, `real_name`, `size`, `type`) VALUES
@@ -1356,7 +1356,7 @@ INSERT INTO `hesk_attachments` (`att_id`, `ticket_id`, `saved_name`, `real_name`
 -- --------------------------------------------------------
 
 --
--- Table structure for table `hesk_banned_emails`
+-- Tabelstructuur voor tabel `hesk_banned_emails`
 --
 
 CREATE TABLE `hesk_banned_emails` (
@@ -1369,7 +1369,7 @@ CREATE TABLE `hesk_banned_emails` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `hesk_banned_ips`
+-- Tabelstructuur voor tabel `hesk_banned_ips`
 --
 
 CREATE TABLE `hesk_banned_ips` (
@@ -1384,7 +1384,7 @@ CREATE TABLE `hesk_banned_ips` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `hesk_categories`
+-- Tabelstructuur voor tabel `hesk_categories`
 --
 
 CREATE TABLE `hesk_categories` (
@@ -1397,7 +1397,7 @@ CREATE TABLE `hesk_categories` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `hesk_categories`
+-- Gegevens worden geëxporteerd voor tabel `hesk_categories`
 --
 
 INSERT INTO `hesk_categories` (`id`, `name`, `cat_order`, `autoassign`, `type`, `priority`) VALUES
@@ -1406,7 +1406,7 @@ INSERT INTO `hesk_categories` (`id`, `name`, `cat_order`, `autoassign`, `type`, 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `hesk_custom_fields`
+-- Tabelstructuur voor tabel `hesk_custom_fields`
 --
 
 CREATE TABLE `hesk_custom_fields` (
@@ -1422,7 +1422,7 @@ CREATE TABLE `hesk_custom_fields` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `hesk_custom_fields`
+-- Gegevens worden geëxporteerd voor tabel `hesk_custom_fields`
 --
 
 INSERT INTO `hesk_custom_fields` (`id`, `use`, `place`, `type`, `req`, `category`, `name`, `value`, `order`) VALUES
@@ -1480,7 +1480,7 @@ INSERT INTO `hesk_custom_fields` (`id`, `use`, `place`, `type`, `req`, `category
 -- --------------------------------------------------------
 
 --
--- Table structure for table `hesk_custom_statuses`
+-- Tabelstructuur voor tabel `hesk_custom_statuses`
 --
 
 CREATE TABLE `hesk_custom_statuses` (
@@ -1494,7 +1494,7 @@ CREATE TABLE `hesk_custom_statuses` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `hesk_kb_articles`
+-- Tabelstructuur voor tabel `hesk_kb_articles`
 --
 
 CREATE TABLE `hesk_kb_articles` (
@@ -1519,7 +1519,7 @@ CREATE TABLE `hesk_kb_articles` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `hesk_kb_attachments`
+-- Tabelstructuur voor tabel `hesk_kb_attachments`
 --
 
 CREATE TABLE `hesk_kb_attachments` (
@@ -1532,7 +1532,7 @@ CREATE TABLE `hesk_kb_attachments` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `hesk_kb_categories`
+-- Tabelstructuur voor tabel `hesk_kb_categories`
 --
 
 CREATE TABLE `hesk_kb_categories` (
@@ -1547,7 +1547,7 @@ CREATE TABLE `hesk_kb_categories` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `hesk_kb_categories`
+-- Gegevens worden geëxporteerd voor tabel `hesk_kb_categories`
 --
 
 INSERT INTO `hesk_kb_categories` (`id`, `name`, `parent`, `articles`, `articles_private`, `articles_draft`, `cat_order`, `type`) VALUES
@@ -1556,7 +1556,7 @@ INSERT INTO `hesk_kb_categories` (`id`, `name`, `parent`, `articles`, `articles_
 -- --------------------------------------------------------
 
 --
--- Table structure for table `hesk_logins`
+-- Tabelstructuur voor tabel `hesk_logins`
 --
 
 CREATE TABLE `hesk_logins` (
@@ -1568,7 +1568,7 @@ CREATE TABLE `hesk_logins` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `hesk_log_overdue`
+-- Tabelstructuur voor tabel `hesk_log_overdue`
 --
 
 CREATE TABLE `hesk_log_overdue` (
@@ -1586,7 +1586,7 @@ CREATE TABLE `hesk_log_overdue` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `hesk_mail`
+-- Tabelstructuur voor tabel `hesk_mail`
 --
 
 CREATE TABLE `hesk_mail` (
@@ -1601,7 +1601,7 @@ CREATE TABLE `hesk_mail` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `hesk_mail`
+-- Gegevens worden geëxporteerd voor tabel `hesk_mail`
 --
 
 INSERT INTO `hesk_mail` (`id`, `from`, `to`, `subject`, `message`, `dt`, `read`, `deletedby`) VALUES
@@ -1610,7 +1610,7 @@ INSERT INTO `hesk_mail` (`id`, `from`, `to`, `subject`, `message`, `dt`, `read`,
 -- --------------------------------------------------------
 
 --
--- Table structure for table `hesk_notes`
+-- Tabelstructuur voor tabel `hesk_notes`
 --
 
 CREATE TABLE `hesk_notes` (
@@ -1623,7 +1623,7 @@ CREATE TABLE `hesk_notes` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `hesk_notes`
+-- Gegevens worden geëxporteerd voor tabel `hesk_notes`
 --
 
 INSERT INTO `hesk_notes` (`id`, `ticket`, `who`, `dt`, `message`, `attachments`) VALUES
@@ -1632,7 +1632,7 @@ INSERT INTO `hesk_notes` (`id`, `ticket`, `who`, `dt`, `message`, `attachments`)
 -- --------------------------------------------------------
 
 --
--- Table structure for table `hesk_online`
+-- Tabelstructuur voor tabel `hesk_online`
 --
 
 CREATE TABLE `hesk_online` (
@@ -1644,7 +1644,7 @@ CREATE TABLE `hesk_online` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `hesk_pipe_loops`
+-- Tabelstructuur voor tabel `hesk_pipe_loops`
 --
 
 CREATE TABLE `hesk_pipe_loops` (
@@ -1657,7 +1657,7 @@ CREATE TABLE `hesk_pipe_loops` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `hesk_replies`
+-- Tabelstructuur voor tabel `hesk_replies`
 --
 
 CREATE TABLE `hesk_replies` (
@@ -1674,7 +1674,7 @@ CREATE TABLE `hesk_replies` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `hesk_replies`
+-- Gegevens worden geëxporteerd voor tabel `hesk_replies`
 --
 
 INSERT INTO `hesk_replies` (`id`, `replyto`, `name`, `message`, `message_html`, `dt`, `attachments`, `staffid`, `rating`, `read`) VALUES
@@ -1683,7 +1683,7 @@ INSERT INTO `hesk_replies` (`id`, `replyto`, `name`, `message`, `message_html`, 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `hesk_reply_drafts`
+-- Tabelstructuur voor tabel `hesk_reply_drafts`
 --
 
 CREATE TABLE `hesk_reply_drafts` (
@@ -1697,7 +1697,7 @@ CREATE TABLE `hesk_reply_drafts` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `hesk_reset_password`
+-- Tabelstructuur voor tabel `hesk_reset_password`
 --
 
 CREATE TABLE `hesk_reset_password` (
@@ -1711,7 +1711,7 @@ CREATE TABLE `hesk_reset_password` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `hesk_service_messages`
+-- Tabelstructuur voor tabel `hesk_service_messages`
 --
 
 CREATE TABLE `hesk_service_messages` (
@@ -1729,7 +1729,7 @@ CREATE TABLE `hesk_service_messages` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `hesk_std_replies`
+-- Tabelstructuur voor tabel `hesk_std_replies`
 --
 
 CREATE TABLE `hesk_std_replies` (
@@ -1743,7 +1743,7 @@ CREATE TABLE `hesk_std_replies` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `hesk_tickets`
+-- Tabelstructuur voor tabel `hesk_tickets`
 --
 
 CREATE TABLE `hesk_tickets` (
@@ -1834,7 +1834,7 @@ CREATE TABLE `hesk_tickets` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `hesk_tickets`
+-- Gegevens worden geëxporteerd voor tabel `hesk_tickets`
 --
 
 INSERT INTO `hesk_tickets` (`id`, `trackid`, `name`, `email`, `category`, `priority`, `subject`, `message`, `message_html`, `dt`, `lastchange`, `firstreply`, `closedat`, `articles`, `ip`, `language`, `status`, `openedby`, `firstreplyby`, `closedby`, `replies`, `staffreplies`, `owner`, `assignedby`, `time_worked`, `lastreplier`, `replierid`, `archive`, `locked`, `attachments`, `merged`, `history`, `custom1`, `custom2`, `custom3`, `custom4`, `custom5`, `custom6`, `custom7`, `custom8`, `custom9`, `custom10`, `custom11`, `custom12`, `custom13`, `custom14`, `custom15`, `custom16`, `custom17`, `custom18`, `custom19`, `custom20`, `custom21`, `custom22`, `custom23`, `custom24`, `custom25`, `custom26`, `custom27`, `custom28`, `custom29`, `custom30`, `custom31`, `custom32`, `custom33`, `custom34`, `custom35`, `custom36`, `custom37`, `custom38`, `custom39`, `custom40`, `custom41`, `custom42`, `custom43`, `custom44`, `custom45`, `custom46`, `custom47`, `custom48`, `custom49`, `custom50`, `due_date`, `overdue_email_sent`) VALUES
@@ -1843,7 +1843,7 @@ INSERT INTO `hesk_tickets` (`id`, `trackid`, `name`, `email`, `category`, `prior
 -- --------------------------------------------------------
 
 --
--- Table structure for table `hesk_ticket_templates`
+-- Tabelstructuur voor tabel `hesk_ticket_templates`
 --
 
 CREATE TABLE `hesk_ticket_templates` (
@@ -1857,7 +1857,7 @@ CREATE TABLE `hesk_ticket_templates` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `hesk_users`
+-- Tabelstructuur voor tabel `hesk_users`
 --
 
 CREATE TABLE `hesk_users` (
@@ -1895,7 +1895,7 @@ CREATE TABLE `hesk_users` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `hesk_users`
+-- Gegevens worden geëxporteerd voor tabel `hesk_users`
 --
 
 INSERT INTO `hesk_users` (`id`, `user`, `pass`, `isadmin`, `name`, `email`, `signature`, `language`, `categories`, `afterreply`, `autostart`, `autoreload`, `notify_customer_new`, `notify_customer_reply`, `show_suggested`, `notify_new_unassigned`, `notify_new_my`, `notify_reply_unassigned`, `notify_reply_my`, `notify_assigned`, `notify_pm`, `notify_note`, `notify_overdue_unassigned`, `notify_overdue_my`, `default_list`, `autoassign`, `heskprivileges`, `ratingneg`, `ratingpos`, `rating`, `replies`) VALUES
@@ -1905,7 +1905,7 @@ INSERT INTO `hesk_users` (`id`, `user`, `pass`, `isadmin`, `name`, `email`, `sig
 -- --------------------------------------------------------
 
 --
--- Table structure for table `hits`
+-- Tabelstructuur voor tabel `hits`
 --
 
 CREATE TABLE `hits` (
@@ -1916,7 +1916,7 @@ CREATE TABLE `hits` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `hits`
+-- Gegevens worden geëxporteerd voor tabel `hits`
 --
 
 INSERT INTO `hits` (`id`, `user_id`, `page`, `kliks`) VALUES
@@ -1965,14 +1965,14 @@ INSERT INTO `hits` (`id`, `user_id`, `page`, `kliks`) VALUES
 (43, 3, 'moderator_links.php', 347),
 (44, 3, 'shoutbox.php', 197),
 (45, 3, 'browse.php', 802),
-(46, 3, 'index.php', 1533),
+(46, 3, 'index.php', 1534),
 (47, 3, 'informatie_ucgod.php', 6),
 (48, 3, 'site_instellingen.php', 44),
 (49, 3, 'credits.php', 136),
 (50, 3, 'donatie.php', 100),
 (51, 3, 'upload_info.php', 174),
 (52, 3, 'upload.php', 86),
-(53, 3, 'my.php', 324),
+(53, 3, 'my.php', 325),
 (54, 3, 'takeprofedit.php', 64),
 (55, 3, 'nzbbrowse.php', 41),
 (56, 3, 'shoutbox_extra.php', 37),
@@ -2067,7 +2067,7 @@ INSERT INTO `hits` (`id`, `user_id`, `page`, `kliks`) VALUES
 (145, 4, 'systeembeheer.php', 1),
 (146, 4, 'donations.php', 1),
 (147, 4, 'avatar_upload.php', 3),
-(148, 3, 'god.php', 905),
+(148, 3, 'god.php', 906),
 (149, 3, 'delwaarschuwing.php', 1),
 (150, 3, 'helpdesk_info.php', 10),
 (151, 3, 'take-acties-test.php', 250),
@@ -2175,7 +2175,7 @@ INSERT INTO `hits` (`id`, `user_id`, `page`, `kliks`) VALUES
 (253, 4, 'nzbdownload.php1tha-playah.nzb.nzb', 1),
 (254, 4, 'takeupload.php', 2),
 (255, 4, 'download.php', 2),
-(256, 3, 'password.php', 21),
+(256, 3, 'password.php', 26),
 (257, 3, 'takeflushall.php', 5),
 (258, 3, 'log_admin.php', 2),
 (259, 3, 'mod_users_wegwezen.php', 17),
@@ -2381,7 +2381,7 @@ INSERT INTO `hits` (`id`, `user_id`, `page`, `kliks`) VALUES
 (459, 8, 'site_regels.php', 25),
 (460, 7, 'bonus_informatie.php', 1),
 (461, 7, 'advanceddownloaded.php', 1),
-(462, 3, 'Moderator.php', 193),
+(462, 3, 'Moderator.php', 194),
 (463, 3, 'modview_bad_gb.php', 8),
 (464, 3, 'cover_view.php', 18),
 (465, 3, 'alle_info.php', 9),
@@ -2858,7 +2858,7 @@ INSERT INTO `hits` (`id`, `user_id`, `page`, `kliks`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `infolog`
+-- Tabelstructuur voor tabel `infolog`
 --
 
 CREATE TABLE `infolog` (
@@ -2873,7 +2873,7 @@ CREATE TABLE `infolog` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ip`
+-- Tabelstructuur voor tabel `ip`
 --
 
 CREATE TABLE `ip` (
@@ -2885,7 +2885,7 @@ CREATE TABLE `ip` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ip_logboek`
+-- Tabelstructuur voor tabel `ip_logboek`
 --
 
 CREATE TABLE `ip_logboek` (
@@ -2897,7 +2897,7 @@ CREATE TABLE `ip_logboek` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `ip_logboek`
+-- Gegevens worden geëxporteerd voor tabel `ip_logboek`
 --
 
 INSERT INTO `ip_logboek` (`id`, `added`, `tekst2`, `tekst3`, `user`) VALUES
@@ -3505,12 +3505,21 @@ INSERT INTO `ip_logboek` (`id`, `added`, `tekst2`, `tekst3`, `user`) VALUES
 (602, '2021-11-30 18:52:53', '127.0.0.1', 'http://cmlrfdtuhre53hsywxhjzwbfo4ve4nepdhy2tmhgpxibtvqz5usnpkyd.onion/userdetails.php?id=3', 3),
 (603, '2021-11-30 18:53:01', '127.0.0.1', 'http://cmlrfdtuhre53hsywxhjzwbfo4ve4nepdhy2tmhgpxibtvqz5usnpkyd.onion/my.php?', 3),
 (604, '2021-11-30 18:54:44', '127.0.0.1', 'http://cmlrfdtuhre53hsywxhjzwbfo4ve4nepdhy2tmhgpxibtvqz5usnpkyd.onion/password.php', 3),
-(605, '2021-11-30 18:54:45', '127.0.0.1', 'http://cmlrfdtuhre53hsywxhjzwbfo4ve4nepdhy2tmhgpxibtvqz5usnpkyd.onion/password.php', 3);
+(605, '2021-11-30 18:54:45', '127.0.0.1', 'http://cmlrfdtuhre53hsywxhjzwbfo4ve4nepdhy2tmhgpxibtvqz5usnpkyd.onion/password.php', 3),
+(606, '2023-07-03 03:33:25', '83.83.102.213', 'https://torrent.media.progoogle.nl/login.php?returnto=%2F', 3),
+(607, '2023-07-03 03:36:18', '83.83.102.213', 'https://torrent.media.progoogle.nl/', 3),
+(608, '2023-07-03 03:36:42', '83.83.102.213', 'https://torrent.media.progoogle.nl/God.php?', 3),
+(609, '2023-07-03 03:37:20', '83.83.102.213', 'https://torrent.media.progoogle.nl/Moderator.php?', 3),
+(610, '2023-07-03 03:37:26', '83.83.102.213', 'https://torrent.media.progoogle.nl/my.php?', 3),
+(611, '2023-07-03 03:38:14', '83.83.102.213', 'https://torrent.media.progoogle.nl/password.php', 3),
+(612, '2023-07-03 03:49:35', '83.83.102.213', 'https://torrent.media.progoogle.nl/password.php', 3),
+(613, '2023-07-03 03:50:17', '83.83.102.213', 'https://torrent.media.progoogle.nl/password.php', 3),
+(614, '2023-07-03 03:50:50', '83.83.102.213', 'https://torrent.media.progoogle.nl/password.php', 3);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `kijkwijzer`
+-- Tabelstructuur voor tabel `kijkwijzer`
 --
 
 CREATE TABLE `kijkwijzer` (
@@ -3523,7 +3532,7 @@ CREATE TABLE `kijkwijzer` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `link_forum`
+-- Tabelstructuur voor tabel `link_forum`
 --
 
 CREATE TABLE `link_forum` (
@@ -3536,7 +3545,7 @@ CREATE TABLE `link_forum` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `loginmessages`
+-- Tabelstructuur voor tabel `loginmessages`
 --
 
 CREATE TABLE `loginmessages` (
@@ -3555,7 +3564,7 @@ CREATE TABLE `loginmessages` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `loterij`
+-- Tabelstructuur voor tabel `loterij`
 --
 
 CREATE TABLE `loterij` (
@@ -3568,7 +3577,7 @@ CREATE TABLE `loterij` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `massa_berichten`
+-- Tabelstructuur voor tabel `massa_berichten`
 --
 
 CREATE TABLE `massa_berichten` (
@@ -3584,7 +3593,7 @@ CREATE TABLE `massa_berichten` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `massa_bericht_mods`
+-- Tabelstructuur voor tabel `massa_bericht_mods`
 --
 
 CREATE TABLE `massa_bericht_mods` (
@@ -3597,7 +3606,7 @@ CREATE TABLE `massa_bericht_mods` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `massa_bericht_mods`
+-- Gegevens worden geëxporteerd voor tabel `massa_bericht_mods`
 --
 
 INSERT INTO `massa_bericht_mods` (`id`, `sender`, `aantal`, `added`, `msg`, `done`) VALUES
@@ -3607,7 +3616,7 @@ INSERT INTO `massa_bericht_mods` (`id`, `sender`, `aantal`, `added`, `msg`, `don
 -- --------------------------------------------------------
 
 --
--- Table structure for table `massa_bericht_torrents`
+-- Tabelstructuur voor tabel `massa_bericht_torrents`
 --
 
 CREATE TABLE `massa_bericht_torrents` (
@@ -3624,7 +3633,7 @@ CREATE TABLE `massa_bericht_torrents` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `messages`
+-- Tabelstructuur voor tabel `messages`
 --
 
 CREATE TABLE `messages` (
@@ -3640,7 +3649,7 @@ CREATE TABLE `messages` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `messages`
+-- Gegevens worden geëxporteerd voor tabel `messages`
 --
 
 INSERT INTO `messages` (`id`, `sender`, `receiver`, `added`, `subject`, `msg`, `unread`, `poster`, `location`) VALUES
@@ -3658,7 +3667,7 @@ INSERT INTO `messages` (`id`, `sender`, `receiver`, `added`, `subject`, `msg`, `
 -- --------------------------------------------------------
 
 --
--- Table structure for table `messages_sjabloon`
+-- Tabelstructuur voor tabel `messages_sjabloon`
 --
 
 CREATE TABLE `messages_sjabloon` (
@@ -3671,7 +3680,7 @@ CREATE TABLE `messages_sjabloon` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `moderators`
+-- Tabelstructuur voor tabel `moderators`
 --
 
 CREATE TABLE `moderators` (
@@ -3684,7 +3693,7 @@ CREATE TABLE `moderators` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `mod_letters`
+-- Tabelstructuur voor tabel `mod_letters`
 --
 
 CREATE TABLE `mod_letters` (
@@ -3695,7 +3704,7 @@ CREATE TABLE `mod_letters` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `mod_letters`
+-- Gegevens worden geëxporteerd voor tabel `mod_letters`
 --
 
 INSERT INTO `mod_letters` (`id`, `userid`, `letter`, `added`) VALUES
@@ -3739,7 +3748,7 @@ INSERT INTO `mod_letters` (`id`, `userid`, `letter`, `added`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `mychat_c_ban_users`
+-- Tabelstructuur voor tabel `mychat_c_ban_users`
 --
 
 CREATE TABLE `mychat_c_ban_users` (
@@ -3753,7 +3762,7 @@ CREATE TABLE `mychat_c_ban_users` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `mychat_c_messages`
+-- Tabelstructuur voor tabel `mychat_c_messages`
 --
 
 CREATE TABLE `mychat_c_messages` (
@@ -3769,7 +3778,7 @@ CREATE TABLE `mychat_c_messages` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `mychat_c_users`
+-- Tabelstructuur voor tabel `mychat_c_users`
 --
 
 CREATE TABLE `mychat_c_users` (
@@ -3784,7 +3793,7 @@ CREATE TABLE `mychat_c_users` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `news`
+-- Tabelstructuur voor tabel `news`
 --
 
 CREATE TABLE `news` (
@@ -3797,7 +3806,7 @@ CREATE TABLE `news` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `news_staff`
+-- Tabelstructuur voor tabel `news_staff`
 --
 
 CREATE TABLE `news_staff` (
@@ -3810,7 +3819,7 @@ CREATE TABLE `news_staff` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `nzbcategories`
+-- Tabelstructuur voor tabel `nzbcategories`
 --
 
 CREATE TABLE `nzbcategories` (
@@ -3820,7 +3829,7 @@ CREATE TABLE `nzbcategories` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `nzbcategories`
+-- Gegevens worden geëxporteerd voor tabel `nzbcategories`
 --
 
 INSERT INTO `nzbcategories` (`id`, `name`, `image`) VALUES
@@ -3856,7 +3865,7 @@ INSERT INTO `nzbcategories` (`id`, `name`, `image`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `nzbcomments`
+-- Tabelstructuur voor tabel `nzbcomments`
 --
 
 CREATE TABLE `nzbcomments` (
@@ -3873,7 +3882,7 @@ CREATE TABLE `nzbcomments` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `nzbdlstats`
+-- Tabelstructuur voor tabel `nzbdlstats`
 --
 
 CREATE TABLE `nzbdlstats` (
@@ -3885,7 +3894,7 @@ CREATE TABLE `nzbdlstats` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `nzbpiecelist`
+-- Tabelstructuur voor tabel `nzbpiecelist`
 --
 
 CREATE TABLE `nzbpiecelist` (
@@ -3904,7 +3913,7 @@ CREATE TABLE `nzbpiecelist` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `nzbpiecelist`
+-- Gegevens worden geëxporteerd voor tabel `nzbpiecelist`
 --
 
 INSERT INTO `nzbpiecelist` (`id`, `nzb`, `nzb_piece`, `filepiece`, `piece_poster`, `piece_date`, `piece_subject`, `piece_groups`, `piece_size`, `piece_segments`, `piece_subjseg`, `piece_par`) VALUES
@@ -3943,7 +3952,7 @@ INSERT INTO `nzbpiecelist` (`id`, `nzb`, `nzb_piece`, `filepiece`, `piece_poster
 -- --------------------------------------------------------
 
 --
--- Table structure for table `nzbs`
+-- Tabelstructuur voor tabel `nzbs`
 --
 
 CREATE TABLE `nzbs` (
@@ -3977,7 +3986,7 @@ CREATE TABLE `nzbs` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `nzbs`
+-- Gegevens worden geëxporteerd voor tabel `nzbs`
 --
 
 INSERT INTO `nzbs` (`id`, `name`, `filename`, `search_text`, `descr`, `ori_descr`, `category`, `size`, `added`, `numfiles`, `comments`, `views`, `hits`, `owner`, `nfo`, `poster`, `postdate`, `groups`, `nzbvernum`, `pars`, `partotsize`, `autoimdb`, `url`, `imdbrating`, `genre`, `addtext`, `format`) VALUES
@@ -3987,7 +3996,7 @@ INSERT INTO `nzbs` (`id`, `name`, `filename`, `search_text`, `descr`, `ori_descr
 -- --------------------------------------------------------
 
 --
--- Table structure for table `opschonen`
+-- Tabelstructuur voor tabel `opschonen`
 --
 
 CREATE TABLE `opschonen` (
@@ -3998,7 +4007,7 @@ CREATE TABLE `opschonen` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `opschonen`
+-- Gegevens worden geëxporteerd voor tabel `opschonen`
 --
 
 INSERT INTO `opschonen` (`id`, `user_id`, `added`, `tijd`) VALUES
@@ -4230,7 +4239,7 @@ INSERT INTO `opschonen` (`id`, `user_id`, `added`, `tijd`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `opschonen_bad_gb`
+-- Tabelstructuur voor tabel `opschonen_bad_gb`
 --
 
 CREATE TABLE `opschonen_bad_gb` (
@@ -4243,7 +4252,7 @@ CREATE TABLE `opschonen_bad_gb` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `opschonen_donations`
+-- Tabelstructuur voor tabel `opschonen_donations`
 --
 
 CREATE TABLE `opschonen_donations` (
@@ -4256,7 +4265,7 @@ CREATE TABLE `opschonen_donations` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `opschonen_messages`
+-- Tabelstructuur voor tabel `opschonen_messages`
 --
 
 CREATE TABLE `opschonen_messages` (
@@ -4269,7 +4278,7 @@ CREATE TABLE `opschonen_messages` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `opschonen_torrents`
+-- Tabelstructuur voor tabel `opschonen_torrents`
 --
 
 CREATE TABLE `opschonen_torrents` (
@@ -4282,7 +4291,7 @@ CREATE TABLE `opschonen_torrents` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `partner`
+-- Tabelstructuur voor tabel `partner`
 --
 
 CREATE TABLE `partner` (
@@ -4293,7 +4302,7 @@ CREATE TABLE `partner` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_german1_ci;
 
 --
--- Dumping data for table `partner`
+-- Gegevens worden geëxporteerd voor tabel `partner`
 --
 
 INSERT INTO `partner` (`id`, `titel`, `banner`, `link`) VALUES
@@ -4303,7 +4312,7 @@ INSERT INTO `partner` (`id`, `titel`, `banner`, `link`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `peers`
+-- Tabelstructuur voor tabel `peers`
 --
 
 CREATE TABLE `peers` (
@@ -4330,7 +4339,7 @@ CREATE TABLE `peers` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `peer_id`
+-- Tabelstructuur voor tabel `peer_id`
 --
 
 CREATE TABLE `peer_id` (
@@ -4342,7 +4351,7 @@ CREATE TABLE `peer_id` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `poll`
+-- Tabelstructuur voor tabel `poll`
 --
 
 CREATE TABLE `poll` (
@@ -4355,7 +4364,7 @@ CREATE TABLE `poll` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `poll`
+-- Gegevens worden geëxporteerd voor tabel `poll`
 --
 
 INSERT INTO `poll` (`id`, `vraag`, `antwoorden`, `stemmen`, `ip`, `datum`) VALUES
@@ -4364,7 +4373,7 @@ INSERT INTO `poll` (`id`, `vraag`, `antwoorden`, `stemmen`, `ip`, `datum`) VALUE
 -- --------------------------------------------------------
 
 --
--- Table structure for table `pollanswers`
+-- Tabelstructuur voor tabel `pollanswers`
 --
 
 CREATE TABLE `pollanswers` (
@@ -4377,7 +4386,7 @@ CREATE TABLE `pollanswers` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `polls`
+-- Tabelstructuur voor tabel `polls`
 --
 
 CREATE TABLE `polls` (
@@ -4410,7 +4419,7 @@ CREATE TABLE `polls` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `posts`
+-- Tabelstructuur voor tabel `posts`
 --
 
 CREATE TABLE `posts` (
@@ -4426,7 +4435,7 @@ CREATE TABLE `posts` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `proxy_ip`
+-- Tabelstructuur voor tabel `proxy_ip`
 --
 
 CREATE TABLE `proxy_ip` (
@@ -4439,7 +4448,7 @@ CREATE TABLE `proxy_ip` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `rating`
+-- Tabelstructuur voor tabel `rating`
 --
 
 CREATE TABLE `rating` (
@@ -4451,7 +4460,7 @@ CREATE TABLE `rating` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ratings`
+-- Tabelstructuur voor tabel `ratings`
 --
 
 CREATE TABLE `ratings` (
@@ -4462,7 +4471,7 @@ CREATE TABLE `ratings` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `ratings`
+-- Gegevens worden geëxporteerd voor tabel `ratings`
 --
 
 INSERT INTO `ratings` (`torrent`, `user`, `rating`, `added`) VALUES
@@ -4472,7 +4481,7 @@ INSERT INTO `ratings` (`torrent`, `user`, `rating`, `added`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `readposts`
+-- Tabelstructuur voor tabel `readposts`
 --
 
 CREATE TABLE `readposts` (
@@ -4483,7 +4492,7 @@ CREATE TABLE `readposts` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `readposts`
+-- Gegevens worden geëxporteerd voor tabel `readposts`
 --
 
 INSERT INTO `readposts` (`id`, `userid`, `topicid`, `lastpostread`) VALUES
@@ -4493,7 +4502,7 @@ INSERT INTO `readposts` (`id`, `userid`, `topicid`, `lastpostread`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `regels`
+-- Tabelstructuur voor tabel `regels`
 --
 
 CREATE TABLE `regels` (
@@ -4507,7 +4516,7 @@ CREATE TABLE `regels` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `regels`
+-- Gegevens worden geëxporteerd voor tabel `regels`
 --
 
 INSERT INTO `regels` (`id`, `volgorde`, `onderwerp`, `inhoud`, `min_class`, `edit_by`, `edit_date`) VALUES
@@ -4516,7 +4525,7 @@ INSERT INTO `regels` (`id`, `volgorde`, `onderwerp`, `inhoud`, `min_class`, `edi
 -- --------------------------------------------------------
 
 --
--- Table structure for table `registratie`
+-- Tabelstructuur voor tabel `registratie`
 --
 
 CREATE TABLE `registratie` (
@@ -4529,7 +4538,7 @@ CREATE TABLE `registratie` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `reports`
+-- Tabelstructuur voor tabel `reports`
 --
 
 CREATE TABLE `reports` (
@@ -4544,7 +4553,7 @@ CREATE TABLE `reports` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `report_user`
+-- Tabelstructuur voor tabel `report_user`
 --
 
 CREATE TABLE `report_user` (
@@ -4561,7 +4570,7 @@ CREATE TABLE `report_user` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `requests`
+-- Tabelstructuur voor tabel `requests`
 --
 
 CREATE TABLE `requests` (
@@ -4580,7 +4589,7 @@ CREATE TABLE `requests` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `shoutboxaktie`
+-- Tabelstructuur voor tabel `shoutboxaktie`
 --
 
 CREATE TABLE `shoutboxaktie` (
@@ -4595,7 +4604,7 @@ CREATE TABLE `shoutboxaktie` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `shoutbox_extra`
+-- Tabelstructuur voor tabel `shoutbox_extra`
 --
 
 CREATE TABLE `shoutbox_extra` (
@@ -4609,7 +4618,7 @@ CREATE TABLE `shoutbox_extra` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `shouts`
+-- Tabelstructuur voor tabel `shouts`
 --
 
 CREATE TABLE `shouts` (
@@ -4620,7 +4629,7 @@ CREATE TABLE `shouts` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `shouts`
+-- Gegevens worden geëxporteerd voor tabel `shouts`
 --
 
 INSERT INTO `shouts` (`id`, `user`, `added`, `text`) VALUES
@@ -4629,7 +4638,7 @@ INSERT INTO `shouts` (`id`, `user`, `added`, `text`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `shouts_mod`
+-- Tabelstructuur voor tabel `shouts_mod`
 --
 
 CREATE TABLE `shouts_mod` (
@@ -4640,7 +4649,7 @@ CREATE TABLE `shouts_mod` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `shouts_mod`
+-- Gegevens worden geëxporteerd voor tabel `shouts_mod`
 --
 
 INSERT INTO `shouts_mod` (`id`, `user`, `added`, `text`) VALUES
@@ -4649,7 +4658,7 @@ INSERT INTO `shouts_mod` (`id`, `user`, `added`, `text`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `shouts_seen`
+-- Tabelstructuur voor tabel `shouts_seen`
 --
 
 CREATE TABLE `shouts_seen` (
@@ -4658,7 +4667,7 @@ CREATE TABLE `shouts_seen` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `shouts_seen`
+-- Gegevens worden geëxporteerd voor tabel `shouts_seen`
 --
 
 INSERT INTO `shouts_seen` (`user`, `seen`) VALUES
@@ -4667,7 +4676,7 @@ INSERT INTO `shouts_seen` (`user`, `seen`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `sitelog`
+-- Tabelstructuur voor tabel `sitelog`
 --
 
 CREATE TABLE `sitelog` (
@@ -4677,7 +4686,7 @@ CREATE TABLE `sitelog` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `sitelog`
+-- Gegevens worden geëxporteerd voor tabel `sitelog`
 --
 
 INSERT INTO `sitelog` (`id`, `added`, `txt`) VALUES
@@ -5844,7 +5853,7 @@ INSERT INTO `sitelog` (`id`, `added`, `txt`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `sitelogaccount`
+-- Tabelstructuur voor tabel `sitelogaccount`
 --
 
 CREATE TABLE `sitelogaccount` (
@@ -5856,7 +5865,7 @@ CREATE TABLE `sitelogaccount` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `sitelogadmin`
+-- Tabelstructuur voor tabel `sitelogadmin`
 --
 
 CREATE TABLE `sitelogadmin` (
@@ -5868,7 +5877,7 @@ CREATE TABLE `sitelogadmin` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `sitelogautoban`
+-- Tabelstructuur voor tabel `sitelogautoban`
 --
 
 CREATE TABLE `sitelogautoban` (
@@ -5880,7 +5889,7 @@ CREATE TABLE `sitelogautoban` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `sitelogcheat`
+-- Tabelstructuur voor tabel `sitelogcheat`
 --
 
 CREATE TABLE `sitelogcheat` (
@@ -5892,7 +5901,7 @@ CREATE TABLE `sitelogcheat` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `sitelogcontrole`
+-- Tabelstructuur voor tabel `sitelogcontrole`
 --
 
 CREATE TABLE `sitelogcontrole` (
@@ -5904,7 +5913,7 @@ CREATE TABLE `sitelogcontrole` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `siteloguseremail`
+-- Tabelstructuur voor tabel `siteloguseremail`
 --
 
 CREATE TABLE `siteloguseremail` (
@@ -5914,7 +5923,7 @@ CREATE TABLE `siteloguseremail` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `siteloguseremail`
+-- Gegevens worden geëxporteerd voor tabel `siteloguseremail`
 --
 
 INSERT INTO `siteloguseremail` (`id`, `added`, `txt`) VALUES
@@ -5927,7 +5936,7 @@ INSERT INTO `siteloguseremail` (`id`, `added`, `txt`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `sitelogusername`
+-- Tabelstructuur voor tabel `sitelogusername`
 --
 
 CREATE TABLE `sitelogusername` (
@@ -5937,7 +5946,7 @@ CREATE TABLE `sitelogusername` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `sitelogusername`
+-- Gegevens worden geëxporteerd voor tabel `sitelogusername`
 --
 
 INSERT INTO `sitelogusername` (`id`, `added`, `txt`) VALUES
@@ -5948,7 +5957,7 @@ INSERT INTO `sitelogusername` (`id`, `added`, `txt`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `sitelogwarning`
+-- Tabelstructuur voor tabel `sitelogwarning`
 --
 
 CREATE TABLE `sitelogwarning` (
@@ -5960,7 +5969,7 @@ CREATE TABLE `sitelogwarning` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `sitelog_login`
+-- Tabelstructuur voor tabel `sitelog_login`
 --
 
 CREATE TABLE `sitelog_login` (
@@ -5969,10 +5978,25 @@ CREATE TABLE `sitelog_login` (
   `txt` text DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
+--
+-- Gegevens worden geëxporteerd voor tabel `sitelog_login`
+--
+
+INSERT INTO `sitelog_login` (`id`, `added`, `txt`) VALUES
+(320, '2023-07-03 02:39:07', 'Have a member login with username TorrentMedia and IP 83.83.102.213'),
+(321, '2023-07-03 02:39:39', 'Have a member login with username TorrentMedia and IP 83.83.102.213'),
+(322, '2023-07-03 02:46:25', 'Have a member login with username TorrentMedia and IP 83.83.102.213'),
+(323, '2023-07-03 02:51:35', 'Have a member login with username TorrentMedia and IP 83.83.102.213'),
+(324, '2023-07-03 02:54:34', 'Have a member login with username TorrentMedia and IP 83.83.102.213'),
+(325, '2023-07-03 02:59:41', 'Have a member login with username TorrentMedia and IP 83.83.102.213'),
+(326, '2023-07-03 03:10:49', 'Have a member login with username TorrentMedia and IP 83.83.102.213'),
+(327, '2023-07-03 03:12:04', 'Have a member login with username TorrentMedia and IP 83.83.102.213'),
+(328, '2023-07-03 03:41:39', 'Have a member login with username ambre_leroux@mailrez.com and IP 156.146.63.138');
+
 -- --------------------------------------------------------
 
 --
--- Table structure for table `site_acties`
+-- Tabelstructuur voor tabel `site_acties`
 --
 
 CREATE TABLE `site_acties` (
@@ -5989,7 +6013,7 @@ CREATE TABLE `site_acties` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `site_vars`
+-- Tabelstructuur voor tabel `site_vars`
 --
 
 CREATE TABLE `site_vars` (
@@ -5999,7 +6023,7 @@ CREATE TABLE `site_vars` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `site_vars`
+-- Gegevens worden geëxporteerd voor tabel `site_vars`
 --
 
 INSERT INTO `site_vars` (`id`, `var_name`, `var_data`) VALUES
@@ -6020,7 +6044,7 @@ INSERT INTO `site_vars` (`id`, `var_name`, `var_data`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `smsbalk`
+-- Tabelstructuur voor tabel `smsbalk`
 --
 
 CREATE TABLE `smsbalk` (
@@ -6040,7 +6064,7 @@ CREATE TABLE `smsbalk` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `stylesheets`
+-- Tabelstructuur voor tabel `stylesheets`
 --
 
 CREATE TABLE `stylesheets` (
@@ -6052,7 +6076,7 @@ CREATE TABLE `stylesheets` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `teller`
+-- Tabelstructuur voor tabel `teller`
 --
 
 CREATE TABLE `teller` (
@@ -6061,7 +6085,7 @@ CREATE TABLE `teller` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `teller`
+-- Gegevens worden geëxporteerd voor tabel `teller`
 --
 
 INSERT INTO `teller` (`datum`, `ip`) VALUES
@@ -6073,7 +6097,7 @@ INSERT INTO `teller` (`datum`, `ip`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `thankyou`
+-- Tabelstructuur voor tabel `thankyou`
 --
 
 CREATE TABLE `thankyou` (
@@ -6086,7 +6110,7 @@ CREATE TABLE `thankyou` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `topics`
+-- Tabelstructuur voor tabel `topics`
 --
 
 CREATE TABLE `topics` (
@@ -6101,7 +6125,7 @@ CREATE TABLE `topics` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `topics`
+-- Gegevens worden geëxporteerd voor tabel `topics`
 --
 
 INSERT INTO `topics` (`id`, `userid`, `subject`, `locked`, `forumid`, `lastpost`, `sticky`, `views`) VALUES
@@ -6111,7 +6135,7 @@ INSERT INTO `topics` (`id`, `userid`, `subject`, `locked`, `forumid`, `lastpost`
 -- --------------------------------------------------------
 
 --
--- Table structure for table `torrents`
+-- Tabelstructuur voor tabel `torrents`
 --
 
 CREATE TABLE `torrents` (
@@ -6152,7 +6176,7 @@ CREATE TABLE `torrents` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `uploadapp`
+-- Tabelstructuur voor tabel `uploadapp`
 --
 
 CREATE TABLE `uploadapp` (
@@ -6176,7 +6200,7 @@ CREATE TABLE `uploadapp` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `uploader_aanvraag`
+-- Tabelstructuur voor tabel `uploader_aanvraag`
 --
 
 CREATE TABLE `uploader_aanvraag` (
@@ -6202,7 +6226,7 @@ CREATE TABLE `uploader_aanvraag` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `uploader_aanvraag`
+-- Gegevens worden geëxporteerd voor tabel `uploader_aanvraag`
 --
 
 INSERT INTO `uploader_aanvraag` (`id`, `user_id`, `toegevoegd`, `ervaring`, `torrent_plaatsen`, `dht`, `uur`, `upload_snelheid`, `uploader`, `uploader_sites`, `staflid`, `staflid_sites`, `aantal_uploads`, `upload_wat`, `opmerking`, `verwerkt`, `verwerkt_datum`, `verwerkt_door`, `verwerkt_reden`) VALUES
@@ -6212,7 +6236,7 @@ INSERT INTO `uploader_aanvraag` (`id`, `user_id`, `toegevoegd`, `ervaring`, `tor
 -- --------------------------------------------------------
 
 --
--- Table structure for table `uploader_bonus`
+-- Tabelstructuur voor tabel `uploader_bonus`
 --
 
 CREATE TABLE `uploader_bonus` (
@@ -6225,7 +6249,7 @@ CREATE TABLE `uploader_bonus` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `users`
+-- Tabelstructuur voor tabel `users`
 --
 
 CREATE TABLE `users` (
@@ -6322,38 +6346,16 @@ CREATE TABLE `users` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 PACK_KEYS=1;
 
 --
--- Dumping data for table `users`
+-- Gegevens worden geëxporteerd voor tabel `users`
 --
 
 INSERT INTO `users` (`id`, `username`, `skype_name`, `wickr_name`, `old_password`, `passhash`, `passkey`, `secret`, `email`, `status`, `added`, `last_login`, `last_access`, `last_browse`, `editsecret`, `privacy`, `stylesheet`, `info`, `blocked`, `blocked_date`, `blocked_reason`, `blocked_by`, `invites`, `invited_by`, `super_seeder`, `credits`, `acceptpms`, `ip`, `class`, `avatar`, `uploaded`, `downloaded`, `title`, `country`, `notifs`, `modcomment`, `enabled`, `avatars`, `donor`, `warned`, `warneduntil`, `torrentsperpage`, `topicsperpage`, `postsperpage`, `deletepms`, `savepms`, `support`, `betaald`, `donor_until`, `warnedby`, `maxtorrents`, `vastmaxtor`, `kliks`, `notifs_donor`, `supportfor`, `donorpm`, `leechwarn`, `leechwarnuntil`, `shout_access`, `latin1`, `firstname`, `lastname`, `showemail`, `perms`, `rooms`, `reg_time`, `gender`, `bonus_punten`, `maxtorrents_extra`, `nzbsperpage`, `nzbretention`, `nzbstodaydl`, `nzbunrestr`, `last_nzbrowse`, `bedanktplaat`, `seedblok`, `shoutblok`, `override_class`, `actieinfo`, `waarschuwing`, `ratio`, `actieserver`, `actieadmin`, `actieuploader`, `actiemoderator`, `doneer1`, `doneer2`, `doneer3`, `XXX`, `shoutbox`) VALUES
-(3, 'TorrentMedia', 'system@torrentmedia.org', '', '', '48a02d4a1918a119ac976e257211316c', 'b8c3e12ab2c321ec8e88f9499e6b41ba', '5600BA1C24CB49B5D243F168D18AFCDBDB57B937', 'system@torrentmedia.org', 'confirmed', '2021-04-18 10:42:02', '2021-11-30 18:54:44', '2021-11-30 18:54:45', '2021-11-30 18:52:16', '5600BA1C24CB49B5D243F168D18AFCDBDB57B937', 'normal', 1, '', 'no', '0000-00-00 00:00:00', '', 0, 0, 0, 'no', 1099, 'yes', '0.0.0.0', 255, '', 107376329883648, 8589934592, '', 15, '[cat26][cat27][cat28][cat29][cat30][cat33][cat34][cat35][cat36][cat37][cat40][cat41][cat43][cat46]', 'Totaal ontvangen aangepast op 14 november 2021  om 22:42:33 - door TorrentMedia - oud = 8.00 GB en nieuw = 8.00 GB.\nTotaal verzonden aangepast op 14 november 2021  om 22:42:33 - door TorrentMedia - oud = 27.34 TB en nieuw = 97.66 TB.\nTotaal ontvangen aangepast op 14 november 2021  om 22:42:04 - door TorrentMedia - oud = 0.00 kB en nieuw = 8.00 GB.\nTotaal verzonden aangepast op 14 november 2021  om 22:42:04 - door TorrentMedia - oud = 25.00 GB en nieuw = 27.34 TB.\nBonus gegeven van 25.00 GB op 14 november 2021  om 22:40:56 - door TorrentMedia - oud = 0.00 kB en nieuw = 25.00 GB.\n', 'yes', 'yes', 'yes', 'no', '0000-00-00 00:00:00', 0, 0, 0, 'no', 'yes', 'no', 'no', '2026-02-11 00:00:00', 0, 1000, 'no', 2206, '[cat26][cat27][cat28][cat29][cat30][cat33][cat34][cat35][cat36][cat37][cat40][cat41][cat43][cat46][cat26][cat27][cat28][cat29][cat30][cat33][cat34][cat35][cat36][cat37][cat40][cat41][cat43][cat46]', '', 'no', 'no', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, '', '', 0, 'user', '', 0, 0, 600, '0', 0, 0, 2, 'no', 1620916053, '', 'no', 'no', 255, 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', '', 'yes'),
-(306, 'Mystica', '', '', '', '40222b69b5c6243d9543bba33bad2f9e', '', '5600BA1C24CB49B5D243F168D18AFCDBDB57B937', 'mistyca12@proton.com', 'confirmed', '2021-11-15 19:34:08', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '', 'normal', 1, NULL, 'no', '0000-00-00 00:00:00', '', 0, 0, 0, 'no', 0, 'yes', '', 0, '', 5368709120, 1073741824, '', 0, '[cat1][cat2][cat3][cat4][cat5][cat6][cat7][cat8][cat9][cat10][cat11][cat12][cat13][cat14][cat15][cat16][cat17][cat18][cat19][cat20][cat21][cat22][cat23][cat24]', '', 'yes', 'yes', 'no', 'no', '0000-00-00 00:00:00', 0, 0, 0, 'yes', 'no', 'no', 'no', '0000-00-00 00:00:00', 0, 6, 'no', 0, '', '', 'no', 'no', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, '', '', 0, 'user', '', 0, 0, 200, '0', 0, 0, 0, 'no', 0, '', 'no', 'no', 255, '', 'no', '', '', '', '', '\"yes\"', '', '', '', '', 'yes'),
-(308, 'Derf48', '', '', '', '3d158ce6239ec71816d0e03a62fd2fa1', '', '5600BA1C24CB49B5D243F168D18AFCDBDB57B937', 'fredm963@gmail.com', 'confirmed', '2021-11-18 02:54:08', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '', 'normal', 1, NULL, 'no', '0000-00-00 00:00:00', '', 0, 0, 0, 'no', 0, 'yes', '', 0, '', 5368709120, 1073741824, '', 0, '[cat1][cat2][cat3][cat4][cat5][cat6][cat7][cat8][cat9][cat10][cat11][cat12][cat13][cat14][cat15][cat16][cat17][cat18][cat19][cat20][cat21][cat22][cat23][cat24]', '', 'yes', 'yes', 'no', 'no', '0000-00-00 00:00:00', 0, 0, 0, 'yes', 'no', 'no', 'no', '0000-00-00 00:00:00', 0, 6, 'no', 0, '', '', 'no', 'no', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, '', '', 0, 'user', '', 0, 0, 200, '0', 0, 0, 0, 'no', 0, '', 'no', 'no', 255, '', 'no', '', '', '', '', '\"yes\"', '', '', '', '', 'yes'),
-(156, 'Yuppie', '', '', '', '5aae919f1d40aa35185c653b324aff78', '', '', 'mr.yuppie@protonmail.com', 'confirmed', '2021-09-29 04:31:44', '2021-09-29 13:25:11', '2021-09-29 19:26:31', '0000-00-00 00:00:00', '', 'normal', 1, NULL, 'no', '0000-00-00 00:00:00', '', 0, 0, 0, 'no', 0, 'yes', '37.48.74.19', 0, '', 5368709120, 1073741824, '', 0, '[cat1][cat2][cat3][cat4][cat5][cat6][cat7][cat8][cat9][cat10][cat11][cat12][cat13][cat14][cat15][cat16][cat17][cat18][cat19][cat20][cat21][cat22][cat23][cat24]', '', 'yes', 'yes', 'no', 'no', '0000-00-00 00:00:00', 0, 0, 0, 'yes', 'no', 'no', 'no', '0000-00-00 00:00:00', 0, 6, 'no', 7, '', '', 'no', 'no', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, '', '', 0, 'user', '', 0, 0, 200, '0', 0, 0, 0, 'no', 0, '', 'no', 'no', 255, '', 'no', '', '', '', '', '\"yes\"', '', '', '', '', 'yes'),
-(207, 'ErikH', '', '', '', 'e93a59c224116ec8cf1e285a01de8e3e', '', '5600BA1C24CB49B5D243F168D18AFCDBDB57B937', 'Mcfunk@protonmail.com', 'confirmed', '2021-10-05 14:15:01', '2021-11-16 11:34:27', '2021-11-16 11:35:19', '2021-11-16 11:35:11', '', 'normal', 1, NULL, 'no', '0000-00-00 00:00:00', '', 0, 0, 0, 'no', 0, 'yes', '45.141.154.30', 0, '', 5368709120, 1073741824, '', 0, '[cat1][cat2][cat3][cat4][cat5][cat6][cat7][cat8][cat9][cat10][cat11][cat12][cat13][cat14][cat15][cat16][cat17][cat18][cat19][cat20][cat21][cat22][cat23][cat24]', '', 'yes', 'yes', 'no', 'no', '0000-00-00 00:00:00', 0, 0, 0, 'yes', 'no', 'no', 'no', '0000-00-00 00:00:00', 0, 6, 'no', 37, '', '', 'no', 'no', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, '', '', 0, 'user', '', 0, 0, 200, '0', 0, 0, 0, 'no', 0, '', 'no', 'no', 255, '', 'no', '', '', '', '', '\"yes\"', '', '', '', '', 'yes'),
-(193, 'zaldiar', '', '', '', 'bb31db8c8b812bde30b53c777eb13be3', '', '5600BA1C24CB49B5D243F168D18AFCDBDB57B937', 'zaldiar@telenet.be', 'confirmed', '2021-10-03 15:13:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '', 'normal', 1, NULL, 'no', '0000-00-00 00:00:00', '', 0, 0, 0, 'no', 0, 'yes', '', 0, '', 5368709120, 1073741824, '', 0, '[cat1][cat2][cat3][cat4][cat5][cat6][cat7][cat8][cat9][cat10][cat11][cat12][cat13][cat14][cat15][cat16][cat17][cat18][cat19][cat20][cat21][cat22][cat23][cat24]', '', 'yes', 'yes', 'no', 'no', '0000-00-00 00:00:00', 0, 0, 0, 'yes', 'no', 'no', 'no', '0000-00-00 00:00:00', 0, 6, 'no', 0, '', '', 'no', 'no', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, '', '', 0, 'user', '', 0, 0, 200, '0', 0, 0, 0, 'no', 0, '', 'no', 'no', 255, '', 'no', '', '', '', '', '\"yes\"', '', '', '', '', 'yes'),
-(192, 'corvette123', '', '', '', 'ef2a7a77f4b30de4577f79292b7ee5db', '', '5600BA1C24CB49B5D243F168D18AFCDBDB57B937', 'roosje1966@live.be', 'confirmed', '2021-10-03 15:00:29', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '', 'normal', 1, NULL, 'no', '0000-00-00 00:00:00', '', 0, 0, 0, 'no', 0, 'yes', '', 0, '', 5368709120, 1073741824, '', 0, '[cat1][cat2][cat3][cat4][cat5][cat6][cat7][cat8][cat9][cat10][cat11][cat12][cat13][cat14][cat15][cat16][cat17][cat18][cat19][cat20][cat21][cat22][cat23][cat24]', '', 'yes', 'yes', 'no', 'no', '0000-00-00 00:00:00', 0, 0, 0, 'yes', 'no', 'no', 'no', '0000-00-00 00:00:00', 0, 6, 'no', 0, '', '', 'no', 'no', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, '', '', 0, 'user', '', 0, 0, 200, '0', 0, 0, 0, 'no', 0, '', 'no', 'no', 255, '', 'no', '', '', '', '', '\"yes\"', '', '', '', '', 'yes'),
-(190, 'krone', '', '', '', '8b881db95c6eae96ae39d68b4351bd6a', '', '5600BA1C24CB49B5D243F168D18AFCDBDB57B937', 'lijssens.jurgen@gmail.com', 'confirmed', '2021-10-03 12:39:03', '2021-11-19 20:39:07', '2021-11-26 19:19:50', '2021-11-26 19:19:44', '', 'normal', 1, NULL, 'no', '0000-00-00 00:00:00', '', 0, 0, 0, 'no', 0, 'yes', '0.0.0.0', 4, '', 5368709120, 1073741824, '', 0, '[cat1][cat2][cat3][cat4][cat5][cat6][cat7][cat8][cat9][cat10][cat11][cat12][cat13][cat14][cat15][cat16][cat17][cat18][cat19][cat20][cat21][cat22][cat23][cat24]', 'Op 17 november 2021  om 01:20:15 - Status verhoogd tot Uploader door TorrentMedia.\n', 'yes', 'yes', 'no', 'no', '0000-00-00 00:00:00', 0, 0, 0, 'yes', 'no', 'no', 'no', '0000-00-00 00:00:00', 0, 6, 'no', 91, '', '', 'no', 'no', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, '', '', 0, 'user', '', 0, 0, 200, '0', 0, 0, 0, 'no', 0, '', 'no', 'no', 255, '', 'no', '', '', '', '', '\"yes\"', '', '', '', '', 'yes'),
-(189, 'zunnebel', '', '', '', 'e30e53855f1c6eb87590f9e21fcae187', '', '5600BA1C24CB49B5D243F168D18AFCDBDB57B937', 'zunnebelgsm@gmail.com', 'confirmed', '2021-10-03 12:14:39', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '', 'normal', 1, NULL, 'no', '0000-00-00 00:00:00', '', 0, 0, 0, 'no', 0, 'yes', '', 0, '', 5368709120, 1073741824, '', 0, '[cat1][cat2][cat3][cat4][cat5][cat6][cat7][cat8][cat9][cat10][cat11][cat12][cat13][cat14][cat15][cat16][cat17][cat18][cat19][cat20][cat21][cat22][cat23][cat24]', '', 'yes', 'yes', 'no', 'no', '0000-00-00 00:00:00', 0, 0, 0, 'yes', 'no', 'no', 'no', '0000-00-00 00:00:00', 0, 6, 'no', 0, '', '', 'no', 'no', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, '', '', 0, 'user', '', 0, 0, 200, '0', 0, 0, 0, 'no', 0, '', 'no', 'no', 255, '', 'no', '', '', '', '', '\"yes\"', '', '', '', '', 'yes'),
-(191, 'esche008', '', '', '', 'c93b3461f00c5f81adbd0cf2d4a6a43c', '', '5600BA1C24CB49B5D243F168D18AFCDBDB57B937', 'arie.escherich@live.nl', 'confirmed', '2021-10-03 12:49:22', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '', 'normal', 1, NULL, 'no', '0000-00-00 00:00:00', '', 0, 0, 0, 'no', 0, 'yes', '', 0, '', 5368709120, 1073741824, '', 0, '[cat1][cat2][cat3][cat4][cat5][cat6][cat7][cat8][cat9][cat10][cat11][cat12][cat13][cat14][cat15][cat16][cat17][cat18][cat19][cat20][cat21][cat22][cat23][cat24]', '', 'yes', 'yes', 'no', 'no', '0000-00-00 00:00:00', 0, 0, 0, 'yes', 'no', 'no', 'no', '0000-00-00 00:00:00', 0, 6, 'no', 0, '', '', 'no', 'no', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, '', '', 0, 'user', '', 0, 0, 200, '0', 0, 0, 0, 'no', 0, '', 'no', 'no', 255, '', 'no', '', '', '', '', '\"yes\"', '', '', '', '', 'yes'),
-(188, 'DeamBoy', '', '', '', '51bde49660a31b08026be76e8b2b7a7e', '', '5600BA1C24CB49B5D243F168D18AFCDBDB57B937', 'ikknap66@gmail.com', 'confirmed', '2021-10-03 11:49:45', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '', 'normal', 1, NULL, 'no', '0000-00-00 00:00:00', '', 0, 0, 0, 'no', 0, 'yes', '', 0, '', 5368709120, 1073741824, '', 0, '[cat1][cat2][cat3][cat4][cat5][cat6][cat7][cat8][cat9][cat10][cat11][cat12][cat13][cat14][cat15][cat16][cat17][cat18][cat19][cat20][cat21][cat22][cat23][cat24]', '', 'yes', 'yes', 'no', 'no', '0000-00-00 00:00:00', 0, 0, 0, 'yes', 'no', 'no', 'no', '0000-00-00 00:00:00', 0, 6, 'no', 0, '', '', 'no', 'no', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, '', '', 0, 'user', '', 0, 0, 200, '0', 0, 0, 0, 'no', 0, '', 'no', 'no', 255, '', 'no', '', '', '', '', '\"yes\"', '', '', '', '', 'yes'),
-(194, 'Henkske', '', '', '', '326620dc9d87ae42af416ab3e5ce550e', '', '5600BA1C24CB49B5D243F168D18AFCDBDB57B937', 'avh-experience@hotmail.com', 'confirmed', '2021-10-03 17:43:27', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '', 'normal', 1, NULL, 'no', '0000-00-00 00:00:00', '', 0, 0, 0, 'no', 0, 'yes', '', 0, '', 5368709120, 1073741824, '', 0, '[cat1][cat2][cat3][cat4][cat5][cat6][cat7][cat8][cat9][cat10][cat11][cat12][cat13][cat14][cat15][cat16][cat17][cat18][cat19][cat20][cat21][cat22][cat23][cat24]', '', 'yes', 'yes', 'no', 'no', '0000-00-00 00:00:00', 0, 0, 0, 'yes', 'no', 'no', 'no', '0000-00-00 00:00:00', 0, 6, 'no', 0, '', '', 'no', 'no', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, '', '', 0, 'user', '', 0, 0, 200, '0', 0, 0, 0, 'no', 0, '', 'no', 'no', 255, '', 'no', '', '', '', '', '\"yes\"', '', '', '', '', 'yes'),
-(195, 'pascal6', '', '', '', '580573d3d84027d9592dfc100e1d1dab', '', '5600BA1C24CB49B5D243F168D18AFCDBDB57B937', 'thuis8000@telenet.be', 'confirmed', '2021-10-03 19:46:21', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '', 'normal', 1, NULL, 'no', '0000-00-00 00:00:00', '', 0, 0, 0, 'no', 0, 'yes', '', 0, '', 5368709120, 1073741824, '', 0, '[cat1][cat2][cat3][cat4][cat5][cat6][cat7][cat8][cat9][cat10][cat11][cat12][cat13][cat14][cat15][cat16][cat17][cat18][cat19][cat20][cat21][cat22][cat23][cat24]', '', 'yes', 'yes', 'no', 'no', '0000-00-00 00:00:00', 0, 0, 0, 'yes', 'no', 'no', 'no', '0000-00-00 00:00:00', 0, 6, 'no', 0, '', '', 'no', 'no', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, '', '', 0, 'user', '', 0, 0, 200, '0', 0, 0, 0, 'no', 0, '', 'no', 'no', 255, '', 'no', '', '', '', '', '\"yes\"', '', '', '', '', 'yes'),
-(211, 'JAMIN2223', '', '', '', '519302f0d0a85c2fc3984a2498e331c4', '', '5600BA1C24CB49B5D243F168D18AFCDBDB57B937', 'jaminilsley123@gmail.com', 'confirmed', '2021-10-06 17:34:51', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '', 'normal', 1, NULL, 'no', '0000-00-00 00:00:00', '', 0, 0, 0, 'no', 0, 'yes', '', 0, '', 5368709120, 1073741824, '', 0, '[cat1][cat2][cat3][cat4][cat5][cat6][cat7][cat8][cat9][cat10][cat11][cat12][cat13][cat14][cat15][cat16][cat17][cat18][cat19][cat20][cat21][cat22][cat23][cat24]', '', 'yes', 'yes', 'no', 'no', '0000-00-00 00:00:00', 0, 0, 0, 'yes', 'no', 'no', 'no', '0000-00-00 00:00:00', 0, 6, 'no', 0, '', '', 'no', 'no', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, '', '', 0, 'user', '', 0, 0, 200, '0', 0, 0, 0, 'no', 0, '', 'no', 'no', 255, '', 'no', '', '', '', '', '\"yes\"', '', '', '', '', 'yes'),
-(276, 'luka1213', '', '', '', '3e5635cfc367060afbe45438cfaaee09', '', '5600BA1C24CB49B5D243F168D18AFCDBDB57B937', 'lluka121212@gmail.com', 'confirmed', '2021-10-20 15:40:35', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '', 'normal', 1, NULL, 'no', '0000-00-00 00:00:00', '', 0, 0, 0, 'no', 0, 'yes', '', 0, '', 5368709120, 1073741824, '', 0, '[cat1][cat2][cat3][cat4][cat5][cat6][cat7][cat8][cat9][cat10][cat11][cat12][cat13][cat14][cat15][cat16][cat17][cat18][cat19][cat20][cat21][cat22][cat23][cat24]', '', 'yes', 'yes', 'no', 'no', '0000-00-00 00:00:00', 0, 0, 0, 'yes', 'no', 'no', 'no', '0000-00-00 00:00:00', 0, 6, 'no', 0, '', '', 'no', 'no', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, '', '', 0, 'user', '', 0, 0, 200, '0', 0, 0, 0, 'no', 0, '', 'no', 'no', 255, '', 'no', '', '', '', '', '\"yes\"', '', '', '', '', 'yes'),
-(303, 'bracco', '', '', '', '6be0a6d1276b6d834f5ef3ba490eb992', '', '5600BA1C24CB49B5D243F168D18AFCDBDB57B937', 'visbak@protonmail.com', 'confirmed', '2021-11-14 01:54:22', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '', 'normal', 1, NULL, 'no', '0000-00-00 00:00:00', '', 0, 0, 0, 'no', 0, 'yes', '', 0, '', 5368709120, 1073741824, '', 0, '[cat1][cat2][cat3][cat4][cat5][cat6][cat7][cat8][cat9][cat10][cat11][cat12][cat13][cat14][cat15][cat16][cat17][cat18][cat19][cat20][cat21][cat22][cat23][cat24]', '', 'yes', 'yes', 'no', 'no', '0000-00-00 00:00:00', 0, 0, 0, 'yes', 'no', 'no', 'no', '0000-00-00 00:00:00', 0, 6, 'no', 0, '', '', 'no', 'no', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, '', '', 0, 'user', '', 0, 0, 200, '0', 0, 0, 0, 'no', 0, '', 'no', 'no', 255, '', 'no', '', '', '', '', '\"yes\"', '', '', '', '', 'yes'),
-(304, 'nathaliesch', '', '', '', 'cffb5bd10ff493dedb6e015c641171df', '', '5600BA1C24CB49B5D243F168D18AFCDBDB57B937', 'nathalieschoonhoven@live.nl', 'confirmed', '2021-11-14 15:18:51', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '', 'normal', 1, NULL, 'no', '0000-00-00 00:00:00', '', 0, 0, 0, 'no', 0, 'yes', '', 0, '', 5368709120, 1073741824, '', 0, '[cat1][cat2][cat3][cat4][cat5][cat6][cat7][cat8][cat9][cat10][cat11][cat12][cat13][cat14][cat15][cat16][cat17][cat18][cat19][cat20][cat21][cat22][cat23][cat24]', '', 'yes', 'yes', 'no', 'no', '0000-00-00 00:00:00', 0, 0, 0, 'yes', 'no', 'no', 'no', '0000-00-00 00:00:00', 0, 6, 'no', 0, '', '', 'no', 'no', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, '', '', 0, 'user', '', 0, 0, 200, '0', 0, 0, 0, 'no', 0, '', 'no', 'no', 255, '', 'no', '', '', '', '', '\"yes\"', '', '', '', '', 'yes'),
-(305, 'clown', '', '', '', '45043d5266f533c88f5b86862d9a45fc', '', '5600BA1C24CB49B5D243F168D18AFCDBDB57B937', 'clonw@hotmail.com', 'confirmed', '2021-11-14 20:40:22', '2021-11-23 10:39:02', '2021-11-23 10:41:02', '2021-11-23 10:41:02', '', 'normal', 1, NULL, 'no', '0000-00-00 00:00:00', '', 0, 0, 0, 'no', 0, 'yes', '195.78.54.239', 0, '', 5368709120, 1073741824, '', 0, '[cat1][cat2][cat3][cat4][cat5][cat6][cat7][cat8][cat9][cat10][cat11][cat12][cat13][cat14][cat15][cat16][cat17][cat18][cat19][cat20][cat21][cat22][cat23][cat24]', '', 'yes', 'yes', 'no', 'no', '0000-00-00 00:00:00', 0, 0, 0, 'yes', 'no', 'no', 'no', '0000-00-00 00:00:00', 0, 6, 'no', 28, '', '', 'no', 'no', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, '', '', 0, 'user', '', 0, 0, 200, '0', 0, 0, 0, 'no', 0, '', 'no', 'no', 255, '', 'no', '', '', '', '', '\"yes\"', '', '', '', '', 'yes'),
-(298, 'dijkrat', '', '', '', '9598af8114c6efdc5a4cabd71be3743b', '', '5600BA1C24CB49B5D243F168D18AFCDBDB57B937', 'dijkrat@yahoo.com', 'confirmed', '2021-11-13 10:35:52', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '', 'normal', 1, NULL, 'no', '0000-00-00 00:00:00', '', 0, 0, 0, 'no', 0, 'yes', '', 0, '', 5368709120, 1073741824, '', 0, '[cat1][cat2][cat3][cat4][cat5][cat6][cat7][cat8][cat9][cat10][cat11][cat12][cat13][cat14][cat15][cat16][cat17][cat18][cat19][cat20][cat21][cat22][cat23][cat24]', '', 'yes', 'yes', 'no', 'no', '0000-00-00 00:00:00', 0, 0, 0, 'yes', 'no', 'no', 'no', '0000-00-00 00:00:00', 0, 6, 'no', 0, '', '', 'no', 'no', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, '', '', 0, 'user', '', 0, 0, 200, '0', 0, 0, 0, 'no', 0, '', 'no', 'no', 255, '', 'no', '', '', '', '', '\"yes\"', '', '', '', '', 'yes'),
-(299, 'Lieske', '', '', '', '36cf5d747760941b2311f575c95c8647', '', '5600BA1C24CB49B5D243F168D18AFCDBDB57B937', 'Lieske1997@gmail.com', 'confirmed', '2021-11-13 13:38:34', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '', 'normal', 1, NULL, 'no', '0000-00-00 00:00:00', '', 0, 0, 0, 'no', 0, 'yes', '', 0, '', 5368709120, 1073741824, '', 0, '[cat1][cat2][cat3][cat4][cat5][cat6][cat7][cat8][cat9][cat10][cat11][cat12][cat13][cat14][cat15][cat16][cat17][cat18][cat19][cat20][cat21][cat22][cat23][cat24]', '', 'yes', 'yes', 'no', 'no', '0000-00-00 00:00:00', 0, 0, 0, 'yes', 'no', 'no', 'no', '0000-00-00 00:00:00', 0, 6, 'no', 0, '', '', 'no', 'no', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, '', '', 0, 'user', '', 0, 0, 200, '0', 0, 0, 0, 'no', 0, '', 'no', 'no', 255, '', 'no', '', '', '', '', '\"yes\"', '', '', '', '', 'yes'),
-(300, 'onderdeel', '', '', '', '3bfe5bf5ca9f5bdb3ab19a75e32a4a0a', '', '5600BA1C24CB49B5D243F168D18AFCDBDB57B937', 'onderdelenmp@outlook.com', 'confirmed', '2021-11-13 17:07:56', '2021-11-13 23:11:58', '2021-11-27 23:05:30', '2021-11-25 23:08:47', '', 'normal', 1, NULL, 'no', '0000-00-00 00:00:00', '', 0, 0, 0, 'no', 0, 'yes', '163.158.56.71', 0, '', 5368709120, 1073741824, '', 0, '[cat1][cat2][cat3][cat4][cat5][cat6][cat7][cat8][cat9][cat10][cat11][cat12][cat13][cat14][cat15][cat16][cat17][cat18][cat19][cat20][cat21][cat22][cat23][cat24]', '', 'yes', 'yes', 'no', 'no', '0000-00-00 00:00:00', 0, 0, 0, 'yes', 'no', 'no', 'no', '0000-00-00 00:00:00', 0, 6, 'no', 43, '', '', 'no', 'no', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, '', '', 0, 'user', '', 0, 0, 200, '0', 0, 0, 0, 'no', 0, '', 'no', 'no', 255, '', 'no', '', '', '', '', '\"yes\"', '', '', '', '', 'yes'),
-(301, 'karpertje', '', '', '', 'db2617cfcf3dfa962c39d516157de8c1', '', '5600BA1C24CB49B5D243F168D18AFCDBDB57B937', 'doos65@hotmail.com', 'confirmed', '2021-11-13 17:54:50', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '', 'normal', 1, NULL, 'no', '0000-00-00 00:00:00', '', 0, 0, 0, 'no', 0, 'yes', '', 0, '', 5368709120, 1073741824, '', 0, '[cat1][cat2][cat3][cat4][cat5][cat6][cat7][cat8][cat9][cat10][cat11][cat12][cat13][cat14][cat15][cat16][cat17][cat18][cat19][cat20][cat21][cat22][cat23][cat24]', '', 'yes', 'yes', 'no', 'no', '0000-00-00 00:00:00', 0, 0, 0, 'yes', 'no', 'no', 'no', '0000-00-00 00:00:00', 0, 6, 'no', 0, '', '', 'no', 'no', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, '', '', 0, 'user', '', 0, 0, 200, '0', 0, 0, 0, 'no', 0, '', 'no', 'no', 255, '', 'no', '', '', '', '', '\"yes\"', '', '', '', '', 'yes'),
-(302, 'zoefdehaas', '', '', '', '9598af8114c6efdc5a4cabd71be3743b', '', '5600BA1C24CB49B5D243F168D18AFCDBDB57B937', 'surfer2018@protonmail.com', 'confirmed', '2021-11-13 20:55:57', '2021-11-15 19:56:53', '2021-11-17 09:49:10', '2021-11-15 20:02:31', '', 'normal', 1, NULL, 'no', '0000-00-00 00:00:00', '', 0, 0, 0, 'no', 0, 'yes', '82.72.28.152', 0, '', 5368709120, 1073741824, '', 0, '[cat1][cat2][cat3][cat4][cat5][cat6][cat7][cat8][cat9][cat10][cat11][cat12][cat13][cat14][cat15][cat16][cat17][cat18][cat19][cat20][cat21][cat22][cat23][cat24]', '', 'yes', 'yes', 'no', 'no', '0000-00-00 00:00:00', 0, 0, 0, 'yes', 'no', 'no', 'no', '0000-00-00 00:00:00', 0, 6, 'no', 125, '', '', 'no', 'no', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, '', '', 0, 'user', '', 0, 0, 200, '0', 0, 0, 0, 'no', 0, '', 'no', 'no', 255, '', 'no', '', '', '', '', '\"yes\"', '', '', '', '', 'yes');
+(3, 'TorrentMedia', 'info@progoogle.nl', '', '', '48a02d4a1918a119ac976e257211316c', '', '5600BA1C24CB49B5D243F168D18AFCDBDB57B937', 'info@progoogle.nl', 'confirmed', '2021-04-18 10:42:02', '2023-07-03 03:50:50', '2023-07-03 03:50:50', '2023-07-03 03:33:25', '', 'normal', 1, '', 'no', '0000-00-00 00:00:00', '', 0, 0, 0, 'no', 1099, 'yes', '0.0.0.0', 255, '', 0, 0, '', 15, '[cat26][cat27][cat28][cat29][cat30][cat33][cat34][cat35][cat36][cat37][cat40][cat41][cat43][cat46]', '', 'yes', 'yes', 'yes', 'no', '0000-00-00 00:00:00', 0, 0, 0, 'no', 'yes', 'no', 'no', '2026-02-11 00:00:00', 0, 1000, 'no', 2215, '[cat26][cat27][cat28][cat29][cat30][cat33][cat34][cat35][cat36][cat37][cat40][cat41][cat43][cat46][cat26][cat27][cat28][cat29][cat30][cat33][cat34][cat35][cat36][cat37][cat40][cat41][cat43][cat46]', '', 'no', 'no', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, '', '', 0, 'user', '', 0, 0, 600, '0', 0, 0, 2, 'no', 1620916053, '', 'no', 'no', 255, 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', '', 'yes');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `users_comment`
+-- Tabelstructuur voor tabel `users_comment`
 --
 
 CREATE TABLE `users_comment` (
@@ -6370,7 +6372,7 @@ CREATE TABLE `users_comment` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `users_credits`
+-- Tabelstructuur voor tabel `users_credits`
 --
 
 CREATE TABLE `users_credits` (
@@ -6381,7 +6383,7 @@ CREATE TABLE `users_credits` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `users_credits`
+-- Gegevens worden geëxporteerd voor tabel `users_credits`
 --
 
 INSERT INTO `users_credits` (`id`, `user_id`, `descr`, `added`) VALUES
@@ -6546,7 +6548,7 @@ INSERT INTO `users_credits` (`id`, `user_id`, `descr`, `added`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `user_ip`
+-- Tabelstructuur voor tabel `user_ip`
 --
 
 CREATE TABLE `user_ip` (
@@ -6558,7 +6560,7 @@ CREATE TABLE `user_ip` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `user_ip`
+-- Gegevens worden geëxporteerd voor tabel `user_ip`
 --
 
 INSERT INTO `user_ip` (`ip`, `userid`, `last_seen`, `id`, `added`) VALUES
@@ -6606,12 +6608,13 @@ INSERT INTO `user_ip` (`ip`, `userid`, `last_seen`, `id`, `added`) VALUES
 ('163.158.56.71', 300, '2021-11-25 23:08:53', 296, '2021-11-13 23:11:59'),
 ('87.64.56.255', 190, '2021-10-19 17:54:23', 295, '2021-10-19 17:54:23'),
 ('84.193.87.230', 3, '2021-11-11 21:04:47', 294, '2021-10-15 20:43:51'),
-('89.46.223.105', 207, '2021-10-11 09:21:00', 293, '2021-10-11 11:19:34');
+('89.46.223.105', 207, '2021-10-11 09:21:00', 293, '2021-10-11 11:19:34'),
+('83.83.102.213', 3, '2023-07-03 03:50:50', 306, '2023-07-03 03:33:25');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `verwacht`
+-- Tabelstructuur voor tabel `verwacht`
 --
 
 CREATE TABLE `verwacht` (
@@ -6628,7 +6631,7 @@ CREATE TABLE `verwacht` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `verwacht_bericht`
+-- Tabelstructuur voor tabel `verwacht_bericht`
 --
 
 CREATE TABLE `verwacht_bericht` (
@@ -6640,7 +6643,7 @@ CREATE TABLE `verwacht_bericht` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `verzoekjes`
+-- Tabelstructuur voor tabel `verzoekjes`
 --
 
 CREATE TABLE `verzoekjes` (
@@ -6657,7 +6660,7 @@ CREATE TABLE `verzoekjes` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `verzoekjes_stemmen`
+-- Tabelstructuur voor tabel `verzoekjes_stemmen`
 --
 
 CREATE TABLE `verzoekjes_stemmen` (
@@ -6669,7 +6672,7 @@ CREATE TABLE `verzoekjes_stemmen` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `warnings`
+-- Tabelstructuur voor tabel `warnings`
 --
 
 CREATE TABLE `warnings` (
@@ -6686,7 +6689,7 @@ CREATE TABLE `warnings` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `warn_pm_gb`
+-- Tabelstructuur voor tabel `warn_pm_gb`
 --
 
 CREATE TABLE `warn_pm_gb` (
@@ -6699,7 +6702,7 @@ CREATE TABLE `warn_pm_gb` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `warn_pm_gb_last`
+-- Tabelstructuur voor tabel `warn_pm_gb_last`
 --
 
 CREATE TABLE `warn_pm_gb_last` (
@@ -6712,7 +6715,7 @@ CREATE TABLE `warn_pm_gb_last` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `warn_pm_seeding`
+-- Tabelstructuur voor tabel `warn_pm_seeding`
 --
 
 CREATE TABLE `warn_pm_seeding` (
@@ -6726,7 +6729,7 @@ CREATE TABLE `warn_pm_seeding` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `warn_pm_torrent`
+-- Tabelstructuur voor tabel `warn_pm_torrent`
 --
 
 CREATE TABLE `warn_pm_torrent` (
@@ -6738,18 +6741,18 @@ CREATE TABLE `warn_pm_torrent` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Indexes for dumped tables
+-- Indexen voor geëxporteerde tabellen
 --
 
 --
--- Indexes for table `aa_results`
+-- Indexen voor tabel `aa_results`
 --
 ALTER TABLE `aa_results`
   ADD PRIMARY KEY (`id`),
   ADD KEY `ip` (`ip`);
 
 --
--- Indexes for table `addedrequests`
+-- Indexen voor tabel `addedrequests`
 --
 ALTER TABLE `addedrequests`
   ADD PRIMARY KEY (`id`),
@@ -6757,90 +6760,90 @@ ALTER TABLE `addedrequests`
   ADD KEY `requestid_userid` (`requestid`,`userid`);
 
 --
--- Indexes for table `aktie`
+-- Indexen voor tabel `aktie`
 --
 ALTER TABLE `aktie`
   ADD PRIMARY KEY (`id`),
   ADD KEY `datum` (`datum`);
 
 --
--- Indexes for table `aktie_donatie`
+-- Indexen voor tabel `aktie_donatie`
 --
 ALTER TABLE `aktie_donatie`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `antidos_logs`
+-- Indexen voor tabel `antidos_logs`
 --
 ALTER TABLE `antidos_logs`
   ADD UNIQUE KEY `ip` (`ip`);
 
 --
--- Indexes for table `auto_warning`
+-- Indexen voor tabel `auto_warning`
 --
 ALTER TABLE `auto_warning`
   ADD PRIMARY KEY (`userid`);
 
 --
--- Indexes for table `avps`
+-- Indexen voor tabel `avps`
 --
 ALTER TABLE `avps`
   ADD PRIMARY KEY (`arg`);
 
 --
--- Indexes for table `banned_agent`
+-- Indexen voor tabel `banned_agent`
 --
 ALTER TABLE `banned_agent`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `bans`
+-- Indexen voor tabel `bans`
 --
 ALTER TABLE `bans`
   ADD PRIMARY KEY (`id`),
   ADD KEY `first_last` (`first`,`last`);
 
 --
--- Indexes for table `bans_special`
+-- Indexen voor tabel `bans_special`
 --
 ALTER TABLE `bans_special`
   ADD PRIMARY KEY (`id`),
   ADD KEY `first_last` (`first`,`last`);
 
 --
--- Indexes for table `berichten`
+-- Indexen voor tabel `berichten`
 --
 ALTER TABLE `berichten`
   ADD PRIMARY KEY (`id`),
   ADD KEY `to` (`receiver`);
 
 --
--- Indexes for table `berichten_box`
+-- Indexen voor tabel `berichten_box`
 --
 ALTER TABLE `berichten_box`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `berichten_sjabloon`
+-- Indexen voor tabel `berichten_sjabloon`
 --
 ALTER TABLE `berichten_sjabloon`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `berichten_subject`
+-- Indexen voor tabel `berichten_subject`
 --
 ALTER TABLE `berichten_subject`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `blocks`
+-- Indexen voor tabel `blocks`
 --
 ALTER TABLE `blocks`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `userfriend` (`userid`,`blockid`);
 
 --
--- Indexes for table `bonus_punten`
+-- Indexen voor tabel `bonus_punten`
 --
 ALTER TABLE `bonus_punten`
   ADD PRIMARY KEY (`id`),
@@ -6850,25 +6853,25 @@ ALTER TABLE `bonus_punten`
   ADD KEY `added` (`added`);
 
 --
--- Indexes for table `bookmarks`
+-- Indexen voor tabel `bookmarks`
 --
 ALTER TABLE `bookmarks`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `categories`
+-- Indexen voor tabel `categories`
 --
 ALTER TABLE `categories`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `clients`
+-- Indexen voor tabel `clients`
 --
 ALTER TABLE `clients`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `comments`
+-- Indexen voor tabel `comments`
 --
 ALTER TABLE `comments`
   ADD PRIMARY KEY (`id`),
@@ -6876,7 +6879,7 @@ ALTER TABLE `comments`
   ADD KEY `torrent` (`torrent`);
 
 --
--- Indexes for table `comments_uploader`
+-- Indexen voor tabel `comments_uploader`
 --
 ALTER TABLE `comments_uploader`
   ADD PRIMARY KEY (`id`),
@@ -6884,127 +6887,127 @@ ALTER TABLE `comments_uploader`
   ADD KEY `torrent` (`torrent`);
 
 --
--- Indexes for table `counter_casino`
+-- Indexen voor tabel `counter_casino`
 --
 ALTER TABLE `counter_casino`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `countries`
+-- Indexen voor tabel `countries`
 --
 ALTER TABLE `countries`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `credits`
+-- Indexen voor tabel `credits`
 --
 ALTER TABLE `credits`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `def_messages`
+-- Indexen voor tabel `def_messages`
 --
 ALTER TABLE `def_messages`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `dlfsuinstelingen`
+-- Indexen voor tabel `dlfsuinstelingen`
 --
 ALTER TABLE `dlfsuinstelingen`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `donatieoverzicht`
+-- Indexen voor tabel `donatieoverzicht`
 --
 ALTER TABLE `donatieoverzicht`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `donatie_ideal`
+-- Indexen voor tabel `donatie_ideal`
 --
 ALTER TABLE `donatie_ideal`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `donatie_ideal_claim_msg`
+-- Indexen voor tabel `donatie_ideal_claim_msg`
 --
 ALTER TABLE `donatie_ideal_claim_msg`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `donatie_ideal_del`
+-- Indexen voor tabel `donatie_ideal_del`
 --
 ALTER TABLE `donatie_ideal_del`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `donatie_sms`
+-- Indexen voor tabel `donatie_sms`
 --
 ALTER TABLE `donatie_sms`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `donatie_sms_claim_msg`
+-- Indexen voor tabel `donatie_sms_claim_msg`
 --
 ALTER TABLE `donatie_sms_claim_msg`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `donatie_sms_del`
+-- Indexen voor tabel `donatie_sms_del`
 --
 ALTER TABLE `donatie_sms_del`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `donatie_telefoon`
+-- Indexen voor tabel `donatie_telefoon`
 --
 ALTER TABLE `donatie_telefoon`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `donatie_telefoon_claim_msg`
+-- Indexen voor tabel `donatie_telefoon_claim_msg`
 --
 ALTER TABLE `donatie_telefoon_claim_msg`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `donatie_telefoon_del`
+-- Indexen voor tabel `donatie_telefoon_del`
 --
 ALTER TABLE `donatie_telefoon_del`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `donatie_users`
+-- Indexen voor tabel `donatie_users`
 --
 ALTER TABLE `donatie_users`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `donations`
+-- Indexen voor tabel `donations`
 --
 ALTER TABLE `donations`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `donations_claim`
+-- Indexen voor tabel `donations_claim`
 --
 ALTER TABLE `donations_claim`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `donations_claim_del`
+-- Indexen voor tabel `donations_claim_del`
 --
 ALTER TABLE `donations_claim_del`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `donations_claim_msg`
+-- Indexen voor tabel `donations_claim_msg`
 --
 ALTER TABLE `donations_claim_msg`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `donations_lotery`
+-- Indexen voor tabel `donations_lotery`
 --
 ALTER TABLE `donations_lotery`
   ADD PRIMARY KEY (`id`),
@@ -7012,20 +7015,20 @@ ALTER TABLE `donations_lotery`
   ADD KEY `done` (`done`);
 
 --
--- Indexes for table `donations_message`
+-- Indexen voor tabel `donations_message`
 --
 ALTER TABLE `donations_message`
   ADD PRIMARY KEY (`id`),
   ADD KEY `tijd` (`tijd`);
 
 --
--- Indexes for table `donations_registratie`
+-- Indexen voor tabel `donations_registratie`
 --
 ALTER TABLE `donations_registratie`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `donations_users`
+-- Indexen voor tabel `donations_users`
 --
 ALTER TABLE `donations_users`
   ADD PRIMARY KEY (`id`),
@@ -7033,116 +7036,116 @@ ALTER TABLE `donations_users`
   ADD KEY `pincode` (`pincode`);
 
 --
--- Indexes for table `doss_logboek`
+-- Indexen voor tabel `doss_logboek`
 --
 ALTER TABLE `doss_logboek`
   ADD KEY `ipnummer` (`ipnummer`);
 
 --
--- Indexes for table `downloaded`
+-- Indexen voor tabel `downloaded`
 --
 ALTER TABLE `downloaded`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `downtotals`
+-- Indexen voor tabel `downtotals`
 --
 ALTER TABLE `downtotals`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `downup`
+-- Indexen voor tabel `downup`
 --
 ALTER TABLE `downup`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `dox`
+-- Indexen voor tabel `dox`
 --
 ALTER TABLE `dox`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `faq`
+-- Indexen voor tabel `faq`
 --
 ALTER TABLE `faq`
   ADD PRIMARY KEY (`id`),
   ADD KEY `receiver` (`volgorde`);
 
 --
--- Indexes for table `files`
+-- Indexen voor tabel `files`
 --
 ALTER TABLE `files`
   ADD PRIMARY KEY (`id`),
   ADD KEY `torrent` (`torrent`);
 
 --
--- Indexes for table `forums`
+-- Indexen voor tabel `forums`
 --
 ALTER TABLE `forums`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `friends`
+-- Indexen voor tabel `friends`
 --
 ALTER TABLE `friends`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `userfriend` (`userid`,`friendid`);
 
 --
--- Indexes for table `giro`
+-- Indexen voor tabel `giro`
 --
 ALTER TABLE `giro`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `helpdesk`
+-- Indexen voor tabel `helpdesk`
 --
 ALTER TABLE `helpdesk`
   ADD UNIQUE KEY `id` (`id`);
 
 --
--- Indexes for table `hesk_attachments`
+-- Indexen voor tabel `hesk_attachments`
 --
 ALTER TABLE `hesk_attachments`
   ADD PRIMARY KEY (`att_id`),
   ADD KEY `ticket_id` (`ticket_id`);
 
 --
--- Indexes for table `hesk_banned_emails`
+-- Indexen voor tabel `hesk_banned_emails`
 --
 ALTER TABLE `hesk_banned_emails`
   ADD PRIMARY KEY (`id`),
   ADD KEY `email` (`email`);
 
 --
--- Indexes for table `hesk_banned_ips`
+-- Indexen voor tabel `hesk_banned_ips`
 --
 ALTER TABLE `hesk_banned_ips`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `hesk_categories`
+-- Indexen voor tabel `hesk_categories`
 --
 ALTER TABLE `hesk_categories`
   ADD PRIMARY KEY (`id`),
   ADD KEY `type` (`type`);
 
 --
--- Indexes for table `hesk_custom_fields`
+-- Indexen voor tabel `hesk_custom_fields`
 --
 ALTER TABLE `hesk_custom_fields`
   ADD PRIMARY KEY (`id`),
   ADD KEY `useType` (`use`,`type`);
 
 --
--- Indexes for table `hesk_custom_statuses`
+-- Indexen voor tabel `hesk_custom_statuses`
 --
 ALTER TABLE `hesk_custom_statuses`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `hesk_kb_articles`
+-- Indexen voor tabel `hesk_kb_articles`
 --
 ALTER TABLE `hesk_kb_articles`
   ADD PRIMARY KEY (`id`),
@@ -7152,13 +7155,13 @@ ALTER TABLE `hesk_kb_articles`
 ALTER TABLE `hesk_kb_articles` ADD FULLTEXT KEY `subject` (`subject`,`content`,`keywords`);
 
 --
--- Indexes for table `hesk_kb_attachments`
+-- Indexen voor tabel `hesk_kb_attachments`
 --
 ALTER TABLE `hesk_kb_attachments`
   ADD PRIMARY KEY (`att_id`);
 
 --
--- Indexes for table `hesk_kb_categories`
+-- Indexen voor tabel `hesk_kb_categories`
 --
 ALTER TABLE `hesk_kb_categories`
   ADD PRIMARY KEY (`id`),
@@ -7166,13 +7169,13 @@ ALTER TABLE `hesk_kb_categories`
   ADD KEY `parent` (`parent`);
 
 --
--- Indexes for table `hesk_logins`
+-- Indexen voor tabel `hesk_logins`
 --
 ALTER TABLE `hesk_logins`
   ADD UNIQUE KEY `ip` (`ip`);
 
 --
--- Indexes for table `hesk_log_overdue`
+-- Indexen voor tabel `hesk_log_overdue`
 --
 ALTER TABLE `hesk_log_overdue`
   ADD PRIMARY KEY (`id`),
@@ -7183,7 +7186,7 @@ ALTER TABLE `hesk_log_overdue`
   ADD KEY `owner` (`owner`);
 
 --
--- Indexes for table `hesk_mail`
+-- Indexen voor tabel `hesk_mail`
 --
 ALTER TABLE `hesk_mail`
   ADD PRIMARY KEY (`id`),
@@ -7191,27 +7194,27 @@ ALTER TABLE `hesk_mail`
   ADD KEY `to` (`to`,`read`,`deletedby`);
 
 --
--- Indexes for table `hesk_notes`
+-- Indexen voor tabel `hesk_notes`
 --
 ALTER TABLE `hesk_notes`
   ADD PRIMARY KEY (`id`),
   ADD KEY `ticketid` (`ticket`);
 
 --
--- Indexes for table `hesk_online`
+-- Indexen voor tabel `hesk_online`
 --
 ALTER TABLE `hesk_online`
   ADD UNIQUE KEY `user_id` (`user_id`),
   ADD KEY `dt` (`dt`);
 
 --
--- Indexes for table `hesk_pipe_loops`
+-- Indexen voor tabel `hesk_pipe_loops`
 --
 ALTER TABLE `hesk_pipe_loops`
   ADD KEY `email` (`email`,`hits`);
 
 --
--- Indexes for table `hesk_replies`
+-- Indexen voor tabel `hesk_replies`
 --
 ALTER TABLE `hesk_replies`
   ADD PRIMARY KEY (`id`),
@@ -7220,34 +7223,34 @@ ALTER TABLE `hesk_replies`
   ADD KEY `staffid` (`staffid`);
 
 --
--- Indexes for table `hesk_reply_drafts`
+-- Indexen voor tabel `hesk_reply_drafts`
 --
 ALTER TABLE `hesk_reply_drafts`
   ADD KEY `owner` (`owner`),
   ADD KEY `ticket` (`ticket`);
 
 --
--- Indexes for table `hesk_reset_password`
+-- Indexen voor tabel `hesk_reset_password`
 --
 ALTER TABLE `hesk_reset_password`
   ADD PRIMARY KEY (`id`),
   ADD KEY `user` (`user`);
 
 --
--- Indexes for table `hesk_service_messages`
+-- Indexen voor tabel `hesk_service_messages`
 --
 ALTER TABLE `hesk_service_messages`
   ADD PRIMARY KEY (`id`),
   ADD KEY `type` (`type`);
 
 --
--- Indexes for table `hesk_std_replies`
+-- Indexen voor tabel `hesk_std_replies`
 --
 ALTER TABLE `hesk_std_replies`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `hesk_tickets`
+-- Indexen voor tabel `hesk_tickets`
 --
 ALTER TABLE `hesk_tickets`
   ADD PRIMARY KEY (`id`),
@@ -7260,74 +7263,74 @@ ALTER TABLE `hesk_tickets`
   ADD KEY `dt` (`dt`);
 
 --
--- Indexes for table `hesk_ticket_templates`
+-- Indexen voor tabel `hesk_ticket_templates`
 --
 ALTER TABLE `hesk_ticket_templates`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `hesk_users`
+-- Indexen voor tabel `hesk_users`
 --
 ALTER TABLE `hesk_users`
   ADD PRIMARY KEY (`id`),
   ADD KEY `autoassign` (`autoassign`);
 
 --
--- Indexes for table `hits`
+-- Indexen voor tabel `hits`
 --
 ALTER TABLE `hits`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `infolog`
+-- Indexen voor tabel `infolog`
 --
 ALTER TABLE `infolog`
   ADD PRIMARY KEY (`id`),
   ADD KEY `datetime` (`datum`);
 
 --
--- Indexes for table `ip`
+-- Indexen voor tabel `ip`
 --
 ALTER TABLE `ip`
   ADD PRIMARY KEY (`id`),
   ADD KEY `ips` (`ip`);
 
 --
--- Indexes for table `ip_logboek`
+-- Indexen voor tabel `ip_logboek`
 --
 ALTER TABLE `ip_logboek`
   ADD PRIMARY KEY (`id`),
   ADD KEY `added` (`added`);
 
 --
--- Indexes for table `kijkwijzer`
+-- Indexen voor tabel `kijkwijzer`
 --
 ALTER TABLE `kijkwijzer`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `link_forum`
+-- Indexen voor tabel `link_forum`
 --
 ALTER TABLE `link_forum`
   ADD PRIMARY KEY (`id`),
   ADD KEY `added` (`added`);
 
 --
--- Indexes for table `loginmessages`
+-- Indexen voor tabel `loginmessages`
 --
 ALTER TABLE `loginmessages`
   ADD PRIMARY KEY (`id`),
   ADD KEY `receiver` (`receiver`);
 
 --
--- Indexes for table `loterij`
+-- Indexen voor tabel `loterij`
 --
 ALTER TABLE `loterij`
   ADD PRIMARY KEY (`id`),
   ADD KEY `user_id` (`user_id`);
 
 --
--- Indexes for table `massa_berichten`
+-- Indexen voor tabel `massa_berichten`
 --
 ALTER TABLE `massa_berichten`
   ADD PRIMARY KEY (`id`),
@@ -7336,7 +7339,7 @@ ALTER TABLE `massa_berichten`
   ADD KEY `added` (`added`);
 
 --
--- Indexes for table `massa_bericht_mods`
+-- Indexen voor tabel `massa_bericht_mods`
 --
 ALTER TABLE `massa_bericht_mods`
   ADD PRIMARY KEY (`id`),
@@ -7345,7 +7348,7 @@ ALTER TABLE `massa_bericht_mods`
   ADD KEY `added` (`added`);
 
 --
--- Indexes for table `massa_bericht_torrents`
+-- Indexen voor tabel `massa_bericht_torrents`
 --
 ALTER TABLE `massa_bericht_torrents`
   ADD PRIMARY KEY (`id`),
@@ -7354,58 +7357,58 @@ ALTER TABLE `massa_bericht_torrents`
   ADD KEY `added` (`added`);
 
 --
--- Indexes for table `messages`
+-- Indexen voor tabel `messages`
 --
 ALTER TABLE `messages`
   ADD PRIMARY KEY (`id`),
   ADD KEY `receiver` (`receiver`);
 
 --
--- Indexes for table `messages_sjabloon`
+-- Indexen voor tabel `messages_sjabloon`
 --
 ALTER TABLE `messages_sjabloon`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `moderators`
+-- Indexen voor tabel `moderators`
 --
 ALTER TABLE `moderators`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `mod_letters`
+-- Indexen voor tabel `mod_letters`
 --
 ALTER TABLE `mod_letters`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `mychat_c_users`
+-- Indexen voor tabel `mychat_c_users`
 --
 ALTER TABLE `mychat_c_users`
   ADD UNIQUE KEY `room` (`room`,`username`);
 
 --
--- Indexes for table `news`
+-- Indexen voor tabel `news`
 --
 ALTER TABLE `news`
   ADD PRIMARY KEY (`id`),
   ADD KEY `added` (`added`);
 
 --
--- Indexes for table `news_staff`
+-- Indexen voor tabel `news_staff`
 --
 ALTER TABLE `news_staff`
   ADD PRIMARY KEY (`id`),
   ADD KEY `added` (`added`);
 
 --
--- Indexes for table `nzbcategories`
+-- Indexen voor tabel `nzbcategories`
 --
 ALTER TABLE `nzbcategories`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `nzbcomments`
+-- Indexen voor tabel `nzbcomments`
 --
 ALTER TABLE `nzbcomments`
   ADD PRIMARY KEY (`id`),
@@ -7413,14 +7416,14 @@ ALTER TABLE `nzbcomments`
   ADD KEY `nzb` (`nzb`);
 
 --
--- Indexes for table `nzbdlstats`
+-- Indexen voor tabel `nzbdlstats`
 --
 ALTER TABLE `nzbdlstats`
   ADD PRIMARY KEY (`id`),
   ADD KEY `date` (`date`,`number`);
 
 --
--- Indexes for table `nzbpiecelist`
+-- Indexen voor tabel `nzbpiecelist`
 --
 ALTER TABLE `nzbpiecelist`
   ADD PRIMARY KEY (`id`),
@@ -7428,7 +7431,7 @@ ALTER TABLE `nzbpiecelist`
   ADD KEY `nzb_piece` (`nzb_piece`);
 
 --
--- Indexes for table `nzbs`
+-- Indexen voor tabel `nzbs`
 --
 ALTER TABLE `nzbs`
   ADD PRIMARY KEY (`id`),
@@ -7450,48 +7453,48 @@ ALTER TABLE `nzbs` ADD FULLTEXT KEY `ori_descr` (`ori_descr`);
 ALTER TABLE `nzbs` ADD FULLTEXT KEY `ft_search` (`search_text`,`name`,`ori_descr`);
 
 --
--- Indexes for table `opschonen`
+-- Indexen voor tabel `opschonen`
 --
 ALTER TABLE `opschonen`
   ADD PRIMARY KEY (`id`),
   ADD KEY `tijd` (`tijd`);
 
 --
--- Indexes for table `opschonen_bad_gb`
+-- Indexen voor tabel `opschonen_bad_gb`
 --
 ALTER TABLE `opschonen_bad_gb`
   ADD PRIMARY KEY (`id`),
   ADD KEY `tijd` (`tijd`);
 
 --
--- Indexes for table `opschonen_donations`
+-- Indexen voor tabel `opschonen_donations`
 --
 ALTER TABLE `opschonen_donations`
   ADD PRIMARY KEY (`id`),
   ADD KEY `tijd` (`tijd`);
 
 --
--- Indexes for table `opschonen_messages`
+-- Indexen voor tabel `opschonen_messages`
 --
 ALTER TABLE `opschonen_messages`
   ADD PRIMARY KEY (`id`),
   ADD KEY `tijd` (`tijd`);
 
 --
--- Indexes for table `opschonen_torrents`
+-- Indexen voor tabel `opschonen_torrents`
 --
 ALTER TABLE `opschonen_torrents`
   ADD PRIMARY KEY (`id`),
   ADD KEY `tijd` (`tijd`);
 
 --
--- Indexes for table `partner`
+-- Indexen voor tabel `partner`
 --
 ALTER TABLE `partner`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `peers`
+-- Indexen voor tabel `peers`
 --
 ALTER TABLE `peers`
   ADD PRIMARY KEY (`id`),
@@ -7503,19 +7506,19 @@ ALTER TABLE `peers`
   ADD KEY `peer_id` (`peer_id`);
 
 --
--- Indexes for table `peer_id`
+-- Indexen voor tabel `peer_id`
 --
 ALTER TABLE `peer_id`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `poll`
+-- Indexen voor tabel `poll`
 --
 ALTER TABLE `poll`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `pollanswers`
+-- Indexen voor tabel `pollanswers`
 --
 ALTER TABLE `pollanswers`
   ADD PRIMARY KEY (`id`),
@@ -7524,13 +7527,13 @@ ALTER TABLE `pollanswers`
   ADD KEY `userid` (`userid`);
 
 --
--- Indexes for table `polls`
+-- Indexen voor tabel `polls`
 --
 ALTER TABLE `polls`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `posts`
+-- Indexen voor tabel `posts`
 --
 ALTER TABLE `posts`
   ADD PRIMARY KEY (`id`),
@@ -7539,7 +7542,7 @@ ALTER TABLE `posts`
 ALTER TABLE `posts` ADD FULLTEXT KEY `body` (`body`);
 
 --
--- Indexes for table `proxy_ip`
+-- Indexen voor tabel `proxy_ip`
 --
 ALTER TABLE `proxy_ip`
   ADD PRIMARY KEY (`id`),
@@ -7547,34 +7550,34 @@ ALTER TABLE `proxy_ip`
   ADD KEY `userid` (`userid`);
 
 --
--- Indexes for table `rating`
+-- Indexen voor tabel `rating`
 --
 ALTER TABLE `rating`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `ratings`
+-- Indexen voor tabel `ratings`
 --
 ALTER TABLE `ratings`
   ADD PRIMARY KEY (`torrent`,`user`),
   ADD KEY `users` (`user`);
 
 --
--- Indexes for table `readposts`
+-- Indexen voor tabel `readposts`
 --
 ALTER TABLE `readposts`
   ADD PRIMARY KEY (`id`),
   ADD KEY `topicid` (`topicid`);
 
 --
--- Indexes for table `regels`
+-- Indexen voor tabel `regels`
 --
 ALTER TABLE `regels`
   ADD PRIMARY KEY (`id`),
   ADD KEY `receiver` (`volgorde`);
 
 --
--- Indexes for table `registratie`
+-- Indexen voor tabel `registratie`
 --
 ALTER TABLE `registratie`
   ADD PRIMARY KEY (`id`),
@@ -7582,156 +7585,156 @@ ALTER TABLE `registratie`
   ADD KEY `added` (`added`);
 
 --
--- Indexes for table `reports`
+-- Indexen voor tabel `reports`
 --
 ALTER TABLE `reports`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `report_user`
+-- Indexen voor tabel `report_user`
 --
 ALTER TABLE `report_user`
   ADD PRIMARY KEY (`id`),
   ADD KEY `added` (`added`);
 
 --
--- Indexes for table `requests`
+-- Indexen voor tabel `requests`
 --
 ALTER TABLE `requests`
   ADD PRIMARY KEY (`id`),
   ADD KEY `userid` (`userid`);
 
 --
--- Indexes for table `shoutboxaktie`
+-- Indexen voor tabel `shoutboxaktie`
 --
 ALTER TABLE `shoutboxaktie`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `shoutbox_extra`
+-- Indexen voor tabel `shoutbox_extra`
 --
 ALTER TABLE `shoutbox_extra`
   ADD PRIMARY KEY (`id`),
   ADD KEY `datum` (`datum`);
 
 --
--- Indexes for table `shouts`
+-- Indexen voor tabel `shouts`
 --
 ALTER TABLE `shouts`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `shouts_mod`
+-- Indexen voor tabel `shouts_mod`
 --
 ALTER TABLE `shouts_mod`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `shouts_seen`
+-- Indexen voor tabel `shouts_seen`
 --
 ALTER TABLE `shouts_seen`
   ADD PRIMARY KEY (`user`);
 
 --
--- Indexes for table `sitelog`
+-- Indexen voor tabel `sitelog`
 --
 ALTER TABLE `sitelog`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `sitelogaccount`
+-- Indexen voor tabel `sitelogaccount`
 --
 ALTER TABLE `sitelogaccount`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `sitelogadmin`
+-- Indexen voor tabel `sitelogadmin`
 --
 ALTER TABLE `sitelogadmin`
   ADD PRIMARY KEY (`id`),
   ADD KEY `added` (`added`);
 
 --
--- Indexes for table `sitelogautoban`
+-- Indexen voor tabel `sitelogautoban`
 --
 ALTER TABLE `sitelogautoban`
   ADD PRIMARY KEY (`id`),
   ADD KEY `added` (`added`);
 
 --
--- Indexes for table `sitelogcheat`
+-- Indexen voor tabel `sitelogcheat`
 --
 ALTER TABLE `sitelogcheat`
   ADD PRIMARY KEY (`id`),
   ADD KEY `added` (`added`);
 
 --
--- Indexes for table `sitelogcontrole`
+-- Indexen voor tabel `sitelogcontrole`
 --
 ALTER TABLE `sitelogcontrole`
   ADD PRIMARY KEY (`id`),
   ADD KEY `added` (`added`);
 
 --
--- Indexes for table `siteloguseremail`
+-- Indexen voor tabel `siteloguseremail`
 --
 ALTER TABLE `siteloguseremail`
   ADD PRIMARY KEY (`id`),
   ADD KEY `added` (`added`);
 
 --
--- Indexes for table `sitelogusername`
+-- Indexen voor tabel `sitelogusername`
 --
 ALTER TABLE `sitelogusername`
   ADD PRIMARY KEY (`id`),
   ADD KEY `added` (`added`);
 
 --
--- Indexes for table `sitelogwarning`
+-- Indexen voor tabel `sitelogwarning`
 --
 ALTER TABLE `sitelogwarning`
   ADD PRIMARY KEY (`id`),
   ADD KEY `added` (`added`);
 
 --
--- Indexes for table `sitelog_login`
+-- Indexen voor tabel `sitelog_login`
 --
 ALTER TABLE `sitelog_login`
   ADD PRIMARY KEY (`id`),
   ADD KEY `added` (`added`);
 
 --
--- Indexes for table `site_acties`
+-- Indexen voor tabel `site_acties`
 --
 ALTER TABLE `site_acties`
   ADD KEY `id` (`id`);
 
 --
--- Indexes for table `site_vars`
+-- Indexen voor tabel `site_vars`
 --
 ALTER TABLE `site_vars`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `smsbalk`
+-- Indexen voor tabel `smsbalk`
 --
 ALTER TABLE `smsbalk`
   ADD KEY `id` (`id`);
 
 --
--- Indexes for table `stylesheets`
+-- Indexen voor tabel `stylesheets`
 --
 ALTER TABLE `stylesheets`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `thankyou`
+-- Indexen voor tabel `thankyou`
 --
 ALTER TABLE `thankyou`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `topics`
+-- Indexen voor tabel `topics`
 --
 ALTER TABLE `topics`
   ADD PRIMARY KEY (`id`),
@@ -7740,7 +7743,7 @@ ALTER TABLE `topics`
   ADD KEY `lastpost` (`lastpost`);
 
 --
--- Indexes for table `torrents`
+-- Indexen voor tabel `torrents`
 --
 ALTER TABLE `torrents`
   ADD PRIMARY KEY (`id`),
@@ -7751,27 +7754,27 @@ ALTER TABLE `torrents`
 ALTER TABLE `torrents` ADD FULLTEXT KEY `ft_search` (`search_text`,`ori_descr`);
 
 --
--- Indexes for table `uploadapp`
+-- Indexen voor tabel `uploadapp`
 --
 ALTER TABLE `uploadapp`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `users` (`userid`);
 
 --
--- Indexes for table `uploader_aanvraag`
+-- Indexen voor tabel `uploader_aanvraag`
 --
 ALTER TABLE `uploader_aanvraag`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `uploader_bonus`
+-- Indexen voor tabel `uploader_bonus`
 --
 ALTER TABLE `uploader_bonus`
   ADD PRIMARY KEY (`id`),
   ADD KEY `userid` (`torrent_id`);
 
 --
--- Indexes for table `users`
+-- Indexen voor tabel `users`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id`),
@@ -7786,7 +7789,7 @@ ALTER TABLE `users`
   ADD KEY `warned` (`warned`);
 
 --
--- Indexes for table `users_comment`
+-- Indexen voor tabel `users_comment`
 --
 ALTER TABLE `users_comment`
   ADD PRIMARY KEY (`id`),
@@ -7794,942 +7797,942 @@ ALTER TABLE `users_comment`
   ADD KEY `done_by` (`done_by`);
 
 --
--- Indexes for table `users_credits`
+-- Indexen voor tabel `users_credits`
 --
 ALTER TABLE `users_credits`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `user_ip`
+-- Indexen voor tabel `user_ip`
 --
 ALTER TABLE `user_ip`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `verwacht`
+-- Indexen voor tabel `verwacht`
 --
 ALTER TABLE `verwacht`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `verwacht_bericht`
+-- Indexen voor tabel `verwacht_bericht`
 --
 ALTER TABLE `verwacht_bericht`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `verzoekjes`
+-- Indexen voor tabel `verzoekjes`
 --
 ALTER TABLE `verzoekjes`
   ADD PRIMARY KEY (`id`),
   ADD KEY `userid` (`userid`);
 
 --
--- Indexes for table `verzoekjes_stemmen`
+-- Indexen voor tabel `verzoekjes_stemmen`
 --
 ALTER TABLE `verzoekjes_stemmen`
   ADD PRIMARY KEY (`verzoek_id`);
 
 --
--- Indexes for table `warnings`
+-- Indexen voor tabel `warnings`
 --
 ALTER TABLE `warnings`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `warn_pm_gb`
+-- Indexen voor tabel `warn_pm_gb`
 --
 ALTER TABLE `warn_pm_gb`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `warn_pm_gb_last`
+-- Indexen voor tabel `warn_pm_gb_last`
 --
 ALTER TABLE `warn_pm_gb_last`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `warn_pm_seeding`
+-- Indexen voor tabel `warn_pm_seeding`
 --
 ALTER TABLE `warn_pm_seeding`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `warn_pm_torrent`
+-- Indexen voor tabel `warn_pm_torrent`
 --
 ALTER TABLE `warn_pm_torrent`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT voor geëxporteerde tabellen
 --
 
 --
--- AUTO_INCREMENT for table `aa_results`
+-- AUTO_INCREMENT voor een tabel `aa_results`
 --
 ALTER TABLE `aa_results`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `addedrequests`
+-- AUTO_INCREMENT voor een tabel `addedrequests`
 --
 ALTER TABLE `addedrequests`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `aktie`
+-- AUTO_INCREMENT voor een tabel `aktie`
 --
 ALTER TABLE `aktie`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `aktie_donatie`
+-- AUTO_INCREMENT voor een tabel `aktie_donatie`
 --
 ALTER TABLE `aktie_donatie`
   MODIFY `id` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
--- AUTO_INCREMENT for table `banned_agent`
+-- AUTO_INCREMENT voor een tabel `banned_agent`
 --
 ALTER TABLE `banned_agent`
   MODIFY `id` int(3) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `bans`
+-- AUTO_INCREMENT voor een tabel `bans`
 --
 ALTER TABLE `bans`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
--- AUTO_INCREMENT for table `bans_special`
+-- AUTO_INCREMENT voor een tabel `bans_special`
 --
 ALTER TABLE `bans_special`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `berichten`
+-- AUTO_INCREMENT voor een tabel `berichten`
 --
 ALTER TABLE `berichten`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `berichten_box`
+-- AUTO_INCREMENT voor een tabel `berichten_box`
 --
 ALTER TABLE `berichten_box`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `berichten_sjabloon`
+-- AUTO_INCREMENT voor een tabel `berichten_sjabloon`
 --
 ALTER TABLE `berichten_sjabloon`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `blocks`
+-- AUTO_INCREMENT voor een tabel `blocks`
 --
 ALTER TABLE `blocks`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table `bonus_punten`
+-- AUTO_INCREMENT voor een tabel `bonus_punten`
 --
 ALTER TABLE `bonus_punten`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=561;
 
 --
--- AUTO_INCREMENT for table `bookmarks`
+-- AUTO_INCREMENT voor een tabel `bookmarks`
 --
 ALTER TABLE `bookmarks`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `categories`
+-- AUTO_INCREMENT voor een tabel `categories`
 --
 ALTER TABLE `categories`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
 
 --
--- AUTO_INCREMENT for table `clients`
+-- AUTO_INCREMENT voor een tabel `clients`
 --
 ALTER TABLE `clients`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `comments`
+-- AUTO_INCREMENT voor een tabel `comments`
 --
 ALTER TABLE `comments`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
 
 --
--- AUTO_INCREMENT for table `comments_uploader`
+-- AUTO_INCREMENT voor een tabel `comments_uploader`
 --
 ALTER TABLE `comments_uploader`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `counter_casino`
+-- AUTO_INCREMENT voor een tabel `counter_casino`
 --
 ALTER TABLE `counter_casino`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `countries`
+-- AUTO_INCREMENT voor een tabel `countries`
 --
 ALTER TABLE `countries`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=106;
 
 --
--- AUTO_INCREMENT for table `credits`
+-- AUTO_INCREMENT voor een tabel `credits`
 --
 ALTER TABLE `credits`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=130;
 
 --
--- AUTO_INCREMENT for table `def_messages`
+-- AUTO_INCREMENT voor een tabel `def_messages`
 --
 ALTER TABLE `def_messages`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `dlfsuinstelingen`
+-- AUTO_INCREMENT voor een tabel `dlfsuinstelingen`
 --
 ALTER TABLE `dlfsuinstelingen`
   MODIFY `id` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=73;
 
 --
--- AUTO_INCREMENT for table `donatieoverzicht`
+-- AUTO_INCREMENT voor een tabel `donatieoverzicht`
 --
 ALTER TABLE `donatieoverzicht`
   MODIFY `id` int(10) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `donatie_ideal`
+-- AUTO_INCREMENT voor een tabel `donatie_ideal`
 --
 ALTER TABLE `donatie_ideal`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `donatie_ideal_claim_msg`
+-- AUTO_INCREMENT voor een tabel `donatie_ideal_claim_msg`
 --
 ALTER TABLE `donatie_ideal_claim_msg`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `donatie_ideal_del`
+-- AUTO_INCREMENT voor een tabel `donatie_ideal_del`
 --
 ALTER TABLE `donatie_ideal_del`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `donatie_sms`
+-- AUTO_INCREMENT voor een tabel `donatie_sms`
 --
 ALTER TABLE `donatie_sms`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `donatie_sms_claim_msg`
+-- AUTO_INCREMENT voor een tabel `donatie_sms_claim_msg`
 --
 ALTER TABLE `donatie_sms_claim_msg`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `donatie_sms_del`
+-- AUTO_INCREMENT voor een tabel `donatie_sms_del`
 --
 ALTER TABLE `donatie_sms_del`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `donatie_telefoon`
+-- AUTO_INCREMENT voor een tabel `donatie_telefoon`
 --
 ALTER TABLE `donatie_telefoon`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `donatie_telefoon_claim_msg`
+-- AUTO_INCREMENT voor een tabel `donatie_telefoon_claim_msg`
 --
 ALTER TABLE `donatie_telefoon_claim_msg`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `donatie_telefoon_del`
+-- AUTO_INCREMENT voor een tabel `donatie_telefoon_del`
 --
 ALTER TABLE `donatie_telefoon_del`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `donatie_users`
+-- AUTO_INCREMENT voor een tabel `donatie_users`
 --
 ALTER TABLE `donatie_users`
   MODIFY `id` int(10) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `donations`
+-- AUTO_INCREMENT voor een tabel `donations`
 --
 ALTER TABLE `donations`
   MODIFY `id` int(8) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `donations_claim`
+-- AUTO_INCREMENT voor een tabel `donations_claim`
 --
 ALTER TABLE `donations_claim`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
--- AUTO_INCREMENT for table `donations_claim_msg`
+-- AUTO_INCREMENT voor een tabel `donations_claim_msg`
 --
 ALTER TABLE `donations_claim_msg`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `donations_lotery`
+-- AUTO_INCREMENT voor een tabel `donations_lotery`
 --
 ALTER TABLE `donations_lotery`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `donations_message`
+-- AUTO_INCREMENT voor een tabel `donations_message`
 --
 ALTER TABLE `donations_message`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `donations_registratie`
+-- AUTO_INCREMENT voor een tabel `donations_registratie`
 --
 ALTER TABLE `donations_registratie`
   MODIFY `id` int(8) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `donations_users`
+-- AUTO_INCREMENT voor een tabel `donations_users`
 --
 ALTER TABLE `donations_users`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
 
 --
--- AUTO_INCREMENT for table `downloaded`
+-- AUTO_INCREMENT voor een tabel `downloaded`
 --
 ALTER TABLE `downloaded`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=62;
 
 --
--- AUTO_INCREMENT for table `downtotals`
+-- AUTO_INCREMENT voor een tabel `downtotals`
 --
 ALTER TABLE `downtotals`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `downup`
+-- AUTO_INCREMENT voor een tabel `downup`
 --
 ALTER TABLE `downup`
   MODIFY `id` int(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=64;
 
 --
--- AUTO_INCREMENT for table `dox`
+-- AUTO_INCREMENT voor een tabel `dox`
 --
 ALTER TABLE `dox`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `faq`
+-- AUTO_INCREMENT voor een tabel `faq`
 --
 ALTER TABLE `faq`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
--- AUTO_INCREMENT for table `files`
+-- AUTO_INCREMENT voor een tabel `files`
 --
 ALTER TABLE `files`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23535;
 
 --
--- AUTO_INCREMENT for table `forums`
+-- AUTO_INCREMENT voor een tabel `forums`
 --
 ALTER TABLE `forums`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
--- AUTO_INCREMENT for table `friends`
+-- AUTO_INCREMENT voor een tabel `friends`
 --
 ALTER TABLE `friends`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
--- AUTO_INCREMENT for table `giro`
+-- AUTO_INCREMENT voor een tabel `giro`
 --
 ALTER TABLE `giro`
   MODIFY `id` int(8) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `helpdesk`
+-- AUTO_INCREMENT voor een tabel `helpdesk`
 --
 ALTER TABLE `helpdesk`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
--- AUTO_INCREMENT for table `hesk_attachments`
+-- AUTO_INCREMENT voor een tabel `hesk_attachments`
 --
 ALTER TABLE `hesk_attachments`
   MODIFY `att_id` mediumint(8) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `hesk_banned_emails`
+-- AUTO_INCREMENT voor een tabel `hesk_banned_emails`
 --
 ALTER TABLE `hesk_banned_emails`
   MODIFY `id` smallint(5) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `hesk_banned_ips`
+-- AUTO_INCREMENT voor een tabel `hesk_banned_ips`
 --
 ALTER TABLE `hesk_banned_ips`
   MODIFY `id` smallint(5) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `hesk_categories`
+-- AUTO_INCREMENT voor een tabel `hesk_categories`
 --
 ALTER TABLE `hesk_categories`
   MODIFY `id` smallint(5) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `hesk_kb_articles`
+-- AUTO_INCREMENT voor een tabel `hesk_kb_articles`
 --
 ALTER TABLE `hesk_kb_articles`
   MODIFY `id` smallint(5) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `hesk_kb_attachments`
+-- AUTO_INCREMENT voor een tabel `hesk_kb_attachments`
 --
 ALTER TABLE `hesk_kb_attachments`
   MODIFY `att_id` mediumint(8) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `hesk_kb_categories`
+-- AUTO_INCREMENT voor een tabel `hesk_kb_categories`
 --
 ALTER TABLE `hesk_kb_categories`
   MODIFY `id` smallint(5) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `hesk_log_overdue`
+-- AUTO_INCREMENT voor een tabel `hesk_log_overdue`
 --
 ALTER TABLE `hesk_log_overdue`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `hesk_mail`
+-- AUTO_INCREMENT voor een tabel `hesk_mail`
 --
 ALTER TABLE `hesk_mail`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `hesk_notes`
+-- AUTO_INCREMENT voor een tabel `hesk_notes`
 --
 ALTER TABLE `hesk_notes`
   MODIFY `id` mediumint(8) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `hesk_replies`
+-- AUTO_INCREMENT voor een tabel `hesk_replies`
 --
 ALTER TABLE `hesk_replies`
   MODIFY `id` mediumint(8) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `hesk_reset_password`
+-- AUTO_INCREMENT voor een tabel `hesk_reset_password`
 --
 ALTER TABLE `hesk_reset_password`
   MODIFY `id` mediumint(8) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `hesk_service_messages`
+-- AUTO_INCREMENT voor een tabel `hesk_service_messages`
 --
 ALTER TABLE `hesk_service_messages`
   MODIFY `id` smallint(5) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `hesk_std_replies`
+-- AUTO_INCREMENT voor een tabel `hesk_std_replies`
 --
 ALTER TABLE `hesk_std_replies`
   MODIFY `id` smallint(5) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `hesk_tickets`
+-- AUTO_INCREMENT voor een tabel `hesk_tickets`
 --
 ALTER TABLE `hesk_tickets`
   MODIFY `id` mediumint(8) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `hesk_ticket_templates`
+-- AUTO_INCREMENT voor een tabel `hesk_ticket_templates`
 --
 ALTER TABLE `hesk_ticket_templates`
   MODIFY `id` smallint(5) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `hesk_users`
+-- AUTO_INCREMENT voor een tabel `hesk_users`
 --
 ALTER TABLE `hesk_users`
   MODIFY `id` smallint(5) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table `hits`
+-- AUTO_INCREMENT voor een tabel `hits`
 --
 ALTER TABLE `hits`
   MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=935;
 
 --
--- AUTO_INCREMENT for table `infolog`
+-- AUTO_INCREMENT voor een tabel `infolog`
 --
 ALTER TABLE `infolog`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=100;
 
 --
--- AUTO_INCREMENT for table `ip`
+-- AUTO_INCREMENT voor een tabel `ip`
 --
 ALTER TABLE `ip`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ip_logboek`
+-- AUTO_INCREMENT voor een tabel `ip_logboek`
 --
 ALTER TABLE `ip_logboek`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=606;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=615;
 
 --
--- AUTO_INCREMENT for table `kijkwijzer`
+-- AUTO_INCREMENT voor een tabel `kijkwijzer`
 --
 ALTER TABLE `kijkwijzer`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `loginmessages`
+-- AUTO_INCREMENT voor een tabel `loginmessages`
 --
 ALTER TABLE `loginmessages`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `loterij`
+-- AUTO_INCREMENT voor een tabel `loterij`
 --
 ALTER TABLE `loterij`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `massa_berichten`
+-- AUTO_INCREMENT voor een tabel `massa_berichten`
 --
 ALTER TABLE `massa_berichten`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `massa_bericht_mods`
+-- AUTO_INCREMENT voor een tabel `massa_bericht_mods`
 --
 ALTER TABLE `massa_bericht_mods`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT for table `massa_bericht_torrents`
+-- AUTO_INCREMENT voor een tabel `massa_bericht_torrents`
 --
 ALTER TABLE `massa_bericht_torrents`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `messages`
+-- AUTO_INCREMENT voor een tabel `messages`
 --
 ALTER TABLE `messages`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=658;
 
 --
--- AUTO_INCREMENT for table `messages_sjabloon`
+-- AUTO_INCREMENT voor een tabel `messages_sjabloon`
 --
 ALTER TABLE `messages_sjabloon`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `moderators`
+-- AUTO_INCREMENT voor een tabel `moderators`
 --
 ALTER TABLE `moderators`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `mod_letters`
+-- AUTO_INCREMENT voor een tabel `mod_letters`
 --
 ALTER TABLE `mod_letters`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
 
 --
--- AUTO_INCREMENT for table `news`
+-- AUTO_INCREMENT voor een tabel `news`
 --
 ALTER TABLE `news`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
--- AUTO_INCREMENT for table `news_staff`
+-- AUTO_INCREMENT voor een tabel `news_staff`
 --
 ALTER TABLE `news_staff`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
--- AUTO_INCREMENT for table `nzbcategories`
+-- AUTO_INCREMENT voor een tabel `nzbcategories`
 --
 ALTER TABLE `nzbcategories`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=85;
 
 --
--- AUTO_INCREMENT for table `nzbcomments`
+-- AUTO_INCREMENT voor een tabel `nzbcomments`
 --
 ALTER TABLE `nzbcomments`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `nzbdlstats`
+-- AUTO_INCREMENT voor een tabel `nzbdlstats`
 --
 ALTER TABLE `nzbdlstats`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `nzbpiecelist`
+-- AUTO_INCREMENT voor een tabel `nzbpiecelist`
 --
 ALTER TABLE `nzbpiecelist`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
 --
--- AUTO_INCREMENT for table `nzbs`
+-- AUTO_INCREMENT voor een tabel `nzbs`
 --
 ALTER TABLE `nzbs`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table `opschonen`
+-- AUTO_INCREMENT voor een tabel `opschonen`
 --
 ALTER TABLE `opschonen`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=225;
 
 --
--- AUTO_INCREMENT for table `opschonen_bad_gb`
+-- AUTO_INCREMENT voor een tabel `opschonen_bad_gb`
 --
 ALTER TABLE `opschonen_bad_gb`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `opschonen_donations`
+-- AUTO_INCREMENT voor een tabel `opschonen_donations`
 --
 ALTER TABLE `opschonen_donations`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `opschonen_messages`
+-- AUTO_INCREMENT voor een tabel `opschonen_messages`
 --
 ALTER TABLE `opschonen_messages`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `opschonen_torrents`
+-- AUTO_INCREMENT voor een tabel `opschonen_torrents`
 --
 ALTER TABLE `opschonen_torrents`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `partner`
+-- AUTO_INCREMENT voor een tabel `partner`
 --
 ALTER TABLE `partner`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
 --
--- AUTO_INCREMENT for table `peers`
+-- AUTO_INCREMENT voor een tabel `peers`
 --
 ALTER TABLE `peers`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3132;
 
 --
--- AUTO_INCREMENT for table `peer_id`
+-- AUTO_INCREMENT voor een tabel `peer_id`
 --
 ALTER TABLE `peer_id`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `poll`
+-- AUTO_INCREMENT voor een tabel `poll`
 --
 ALTER TABLE `poll`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `pollanswers`
+-- AUTO_INCREMENT voor een tabel `pollanswers`
 --
 ALTER TABLE `pollanswers`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `polls`
+-- AUTO_INCREMENT voor een tabel `polls`
 --
 ALTER TABLE `polls`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `posts`
+-- AUTO_INCREMENT voor een tabel `posts`
 --
 ALTER TABLE `posts`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table `proxy_ip`
+-- AUTO_INCREMENT voor een tabel `proxy_ip`
 --
 ALTER TABLE `proxy_ip`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `rating`
+-- AUTO_INCREMENT voor een tabel `rating`
 --
 ALTER TABLE `rating`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `readposts`
+-- AUTO_INCREMENT voor een tabel `readposts`
 --
 ALTER TABLE `readposts`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table `regels`
+-- AUTO_INCREMENT voor een tabel `regels`
 --
 ALTER TABLE `regels`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `registratie`
+-- AUTO_INCREMENT voor een tabel `registratie`
 --
 ALTER TABLE `registratie`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `reports`
+-- AUTO_INCREMENT voor een tabel `reports`
 --
 ALTER TABLE `reports`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `report_user`
+-- AUTO_INCREMENT voor een tabel `report_user`
 --
 ALTER TABLE `report_user`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `requests`
+-- AUTO_INCREMENT voor een tabel `requests`
 --
 ALTER TABLE `requests`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `shoutboxaktie`
+-- AUTO_INCREMENT voor een tabel `shoutboxaktie`
 --
 ALTER TABLE `shoutboxaktie`
   MODIFY `id` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table `shoutbox_extra`
+-- AUTO_INCREMENT voor een tabel `shoutbox_extra`
 --
 ALTER TABLE `shoutbox_extra`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT for table `shouts`
+-- AUTO_INCREMENT voor een tabel `shouts`
 --
 ALTER TABLE `shouts`
   MODIFY `id` smallint(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
 
 --
--- AUTO_INCREMENT for table `shouts_mod`
+-- AUTO_INCREMENT voor een tabel `shouts_mod`
 --
 ALTER TABLE `shouts_mod`
   MODIFY `id` smallint(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `sitelog`
+-- AUTO_INCREMENT voor een tabel `sitelog`
 --
 ALTER TABLE `sitelog`
   MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1164;
 
 --
--- AUTO_INCREMENT for table `sitelogaccount`
+-- AUTO_INCREMENT voor een tabel `sitelogaccount`
 --
 ALTER TABLE `sitelogaccount`
   MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1554;
 
 --
--- AUTO_INCREMENT for table `sitelogadmin`
+-- AUTO_INCREMENT voor een tabel `sitelogadmin`
 --
 ALTER TABLE `sitelogadmin`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `sitelogautoban`
+-- AUTO_INCREMENT voor een tabel `sitelogautoban`
 --
 ALTER TABLE `sitelogautoban`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `sitelogcheat`
+-- AUTO_INCREMENT voor een tabel `sitelogcheat`
 --
 ALTER TABLE `sitelogcheat`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `sitelogcontrole`
+-- AUTO_INCREMENT voor een tabel `sitelogcontrole`
 --
 ALTER TABLE `sitelogcontrole`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `siteloguseremail`
+-- AUTO_INCREMENT voor een tabel `siteloguseremail`
 --
 ALTER TABLE `siteloguseremail`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT for table `sitelogusername`
+-- AUTO_INCREMENT voor een tabel `sitelogusername`
 --
 ALTER TABLE `sitelogusername`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT for table `sitelogwarning`
+-- AUTO_INCREMENT voor een tabel `sitelogwarning`
 --
 ALTER TABLE `sitelogwarning`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `sitelog_login`
+-- AUTO_INCREMENT voor een tabel `sitelog_login`
 --
 ALTER TABLE `sitelog_login`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=320;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=329;
 
 --
--- AUTO_INCREMENT for table `site_acties`
+-- AUTO_INCREMENT voor een tabel `site_acties`
 --
 ALTER TABLE `site_acties`
   MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
--- AUTO_INCREMENT for table `site_vars`
+-- AUTO_INCREMENT voor een tabel `site_vars`
 --
 ALTER TABLE `site_vars`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
--- AUTO_INCREMENT for table `smsbalk`
+-- AUTO_INCREMENT voor een tabel `smsbalk`
 --
 ALTER TABLE `smsbalk`
   MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `stylesheets`
+-- AUTO_INCREMENT voor een tabel `stylesheets`
 --
 ALTER TABLE `stylesheets`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `thankyou`
+-- AUTO_INCREMENT voor een tabel `thankyou`
 --
 ALTER TABLE `thankyou`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `topics`
+-- AUTO_INCREMENT voor een tabel `topics`
 --
 ALTER TABLE `topics`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table `torrents`
+-- AUTO_INCREMENT voor een tabel `torrents`
 --
 ALTER TABLE `torrents`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=305;
 
 --
--- AUTO_INCREMENT for table `uploadapp`
+-- AUTO_INCREMENT voor een tabel `uploadapp`
 --
 ALTER TABLE `uploadapp`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `uploader_aanvraag`
+-- AUTO_INCREMENT voor een tabel `uploader_aanvraag`
 --
 ALTER TABLE `uploader_aanvraag`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=264;
 
 --
--- AUTO_INCREMENT for table `uploader_bonus`
+-- AUTO_INCREMENT voor een tabel `uploader_bonus`
 --
 ALTER TABLE `uploader_bonus`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `users`
+-- AUTO_INCREMENT voor een tabel `users`
 --
 ALTER TABLE `users`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=310;
 
 --
--- AUTO_INCREMENT for table `users_comment`
+-- AUTO_INCREMENT voor een tabel `users_comment`
 --
 ALTER TABLE `users_comment`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `users_credits`
+-- AUTO_INCREMENT voor een tabel `users_credits`
 --
 ALTER TABLE `users_credits`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=158;
 
 --
--- AUTO_INCREMENT for table `user_ip`
+-- AUTO_INCREMENT voor een tabel `user_ip`
 --
 ALTER TABLE `user_ip`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=306;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=307;
 
 --
--- AUTO_INCREMENT for table `verwacht`
+-- AUTO_INCREMENT voor een tabel `verwacht`
 --
 ALTER TABLE `verwacht`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `verwacht_bericht`
+-- AUTO_INCREMENT voor een tabel `verwacht_bericht`
 --
 ALTER TABLE `verwacht_bericht`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table `verzoekjes`
+-- AUTO_INCREMENT voor een tabel `verzoekjes`
 --
 ALTER TABLE `verzoekjes`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT for table `verzoekjes_stemmen`
+-- AUTO_INCREMENT voor een tabel `verzoekjes_stemmen`
 --
 ALTER TABLE `verzoekjes_stemmen`
   MODIFY `verzoek_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table `warnings`
+-- AUTO_INCREMENT voor een tabel `warnings`
 --
 ALTER TABLE `warnings`
   MODIFY `id` int(8) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `warn_pm_gb`
+-- AUTO_INCREMENT voor een tabel `warn_pm_gb`
 --
 ALTER TABLE `warn_pm_gb`
   MODIFY `id` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
--- AUTO_INCREMENT for table `warn_pm_gb_last`
+-- AUTO_INCREMENT voor een tabel `warn_pm_gb_last`
 --
 ALTER TABLE `warn_pm_gb_last`
   MODIFY `id` int(8) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `warn_pm_seeding`
+-- AUTO_INCREMENT voor een tabel `warn_pm_seeding`
 --
 ALTER TABLE `warn_pm_seeding`
   MODIFY `id` int(8) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `warn_pm_torrent`
+-- AUTO_INCREMENT voor een tabel `warn_pm_torrent`
 --
 ALTER TABLE `warn_pm_torrent`
   MODIFY `id` int(8) NOT NULL AUTO_INCREMENT;
